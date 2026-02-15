@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Fullflow Orchestrator"
+  short_description: "Orchestrates the full UI pipeline from requirements to acceptance with unified artifacts."
+  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline with style-scope lock and optional icon pipeline."
+
+policy:
+  allow_implicit_invocation: true

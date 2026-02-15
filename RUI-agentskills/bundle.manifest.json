@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-02-16T01:28:58",
+  "source_skills_dir": "/home/ruzenie/ai/ruiskills/RUI-agentskills",
+  "skill_count": 18,
+  "bundles": [
+    {
+      "name": "codex-cn",
+      "path": "RUI-agentskills/codex-cn",
+      "platform": "codex",
+      "locale": "CN",
+      "entry": "AGENTS.md"
+    },
+    {
+      "name": "codex-en",
+      "path": "RUI-agentskills/codex-en",
+      "platform": "codex",
+      "locale": "EN",
+      "entry": "AGENTS.md"
+    },
+    {
+      "name": "claude-cn",
+      "path": "RUI-agentskills/claude-cn",
+      "platform": "claude",
+      "locale": "CN",
+      "entry": "CLAUDE.md"
+    },
+    {
+      "name": "claude-en",
+      "path": "RUI-agentskills/claude-en",
+      "platform": "claude",
+      "locale": "EN",
+      "entry": "CLAUDE.md"
+    }
+  ]
+}

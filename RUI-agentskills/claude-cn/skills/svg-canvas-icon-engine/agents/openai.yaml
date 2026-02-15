@@ -1,0 +1,7 @@
+interface:
+  display_name: "SVG Canvas Icon Engine"
+  short_description: "生成图标系统规范与可复用 SVG/Canvas 资产"
+  default_prompt: "Use $svg-canvas-icon-engine to generate icon manifests/specs and reusable SVG/Canvas assets."
+
+policy:
+  allow_implicit_invocation: true

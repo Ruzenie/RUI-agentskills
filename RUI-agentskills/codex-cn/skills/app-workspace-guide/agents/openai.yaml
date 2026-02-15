@@ -1,0 +1,7 @@
+interface:
+  display_name: "App Workspace Guide"
+  short_description: "读取并解释app工作区的技术和结构基线"
+  default_prompt: "Use $app-workspace-guide to understand this app workspace baseline before making UI changes."
+
+policy:
+  allow_implicit_invocation: true

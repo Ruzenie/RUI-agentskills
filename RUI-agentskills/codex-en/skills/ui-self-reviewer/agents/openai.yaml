@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Self Reviewer"
+  short_description: "Performs pre-delivery self-review across code, visual, interaction, and aesthetics."
+  default_prompt: "Use $ui-self-reviewer to run a structured self-review before shipping."
+
+policy:
+  allow_implicit_invocation: true

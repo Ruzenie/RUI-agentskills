@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Selector Pro"
+  short_description: "Provides deterministic UI library recommendation, evaluation, and trade-off output."
+  default_prompt: "Use $ui-selector-pro to recommend and evaluate UI libraries for my project with explicit tradeoffs."
+
+policy:
+  allow_implicit_invocation: true

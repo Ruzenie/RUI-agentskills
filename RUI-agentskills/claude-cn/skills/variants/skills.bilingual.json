@@ -1,0 +1,167 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "ui-fullflow-orchestrator",
+      "category_zh": "核心编排层",
+      "category_en": "Core Orchestration",
+      "title_zh": "全流程编排",
+      "title_en": "Fullflow Orchestration",
+      "desc_zh": "串联需求、选型、审美、实现、验收与自评，输出统一流水线产物。",
+      "desc_en": "Orchestrates the full UI pipeline from requirements to acceptance with unified artifacts."
+    },
+    {
+      "id": "requirements-elicitation-engine",
+      "category_zh": "核心编排层",
+      "category_en": "Core Orchestration",
+      "title_zh": "需求反问引擎",
+      "title_en": "Requirements Elicitation Engine",
+      "desc_zh": "通过结构化追问补全模糊需求，生成 PRD、问题清单与风格档案。",
+      "desc_en": "Clarifies ambiguous requirements via structured questions and generates PRD artifacts."
+    },
+    {
+      "id": "ui-codegen-master",
+      "category_zh": "核心编排层",
+      "category_en": "Core Orchestration",
+      "title_zh": "UI 总控",
+      "title_en": "UI Codegen Master",
+      "desc_zh": "整合选型、审美、生成、重构、验收与自评，收敛端到端交付。",
+      "desc_en": "Consolidates selection, design, generation, refactoring, and quality closure."
+    },
+    {
+      "id": "ui-selector-pro",
+      "category_zh": "选型决策层",
+      "category_en": "Selection & Decision",
+      "title_zh": "组件库选型引擎",
+      "title_en": "UI Selector Pro",
+      "desc_zh": "执行 UI 组件库推荐、评估与对比，给出可落地决策。",
+      "desc_en": "Provides deterministic UI library recommendation, evaluation, and trade-off output."
+    },
+    {
+      "id": "ui-selector-playbook",
+      "category_zh": "选型决策层",
+      "category_en": "Selection & Decision",
+      "title_zh": "选型策略手册",
+      "title_en": "UI Selector Playbook",
+      "desc_zh": "沉淀选型流程、ADR 和评审策略，支持团队化决策。",
+      "desc_en": "Supplies selection workflow, ADR patterns, and review strategies."
+    },
+    {
+      "id": "ui-aesthetic-coach",
+      "category_zh": "审美策略层",
+      "category_en": "Aesthetic Strategy",
+      "title_zh": "审美教练",
+      "title_en": "UI Aesthetic Coach",
+      "desc_zh": "提供视觉诊断、风格方向和设计令牌建议。",
+      "desc_en": "Delivers visual critique, style direction, and token-oriented guidance."
+    },
+    {
+      "id": "ui-aesthetic-generator",
+      "category_zh": "审美策略层",
+      "category_en": "Aesthetic Strategy",
+      "title_zh": "审美规范生成器",
+      "title_en": "UI Aesthetic Generator",
+      "desc_zh": "将审美规范转化为可执行的生成约束与视觉规则。",
+      "desc_en": "Turns visual standards into generation-ready constraints and style rules."
+    },
+    {
+      "id": "ui-generation-workflow-runner",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "生成流程执行器",
+      "title_en": "UI Generation Workflow Runner",
+      "desc_zh": "按结构规划→组件实现→优化→验收四步法推进实现。",
+      "desc_en": "Executes implementation via a four-step generation workflow."
+    },
+    {
+      "id": "style-scope-guard",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "样式边界守卫",
+      "title_en": "Style Scope Guard",
+      "desc_zh": "先锁定用户指定样式范围，再允许修改，越界即阻断。",
+      "desc_en": "Locks style-edit scope before changes and blocks out-of-scope edits."
+    },
+    {
+      "id": "svg-canvas-icon-engine",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "图标系统引擎",
+      "title_en": "SVG Canvas Icon Engine",
+      "desc_zh": "生成图标清单、规范与可复用 SVG/Canvas 资源。",
+      "desc_en": "Generates icon manifests, specs, and reusable SVG/Canvas assets."
+    },
+    {
+      "id": "ui-component-extractor",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "组件抽离器",
+      "title_en": "UI Component Extractor",
+      "desc_zh": "识别拆分时机并执行组件抽离与回归验证。",
+      "desc_en": "Extracts reusable components based on refactor thresholds."
+    },
+    {
+      "id": "frontend-standards-enforcer",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "前端规范门禁",
+      "title_en": "Frontend Standards Enforcer",
+      "desc_zh": "检查结构、命名、类型、性能和一致性，给出修复路径。",
+      "desc_en": "Enforces frontend standards across structure, typing, performance, and quality."
+    },
+    {
+      "id": "ui-acceptance-auditor",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "验收审计器",
+      "title_en": "UI Acceptance Auditor",
+      "desc_zh": "按多维标准执行验收并输出发布建议。",
+      "desc_en": "Runs multi-dimension acceptance checks and release recommendations."
+    },
+    {
+      "id": "ui-self-reviewer",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "自评审查器",
+      "title_en": "UI Self Reviewer",
+      "desc_zh": "从代码、视觉、交互、审美四个维度执行交付前自评。",
+      "desc_en": "Performs pre-delivery self-review across code, visual, interaction, and aesthetics."
+    },
+    {
+      "id": "project-scaffold-builder",
+      "category_zh": "架构与基建层",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "脚手架构建器",
+      "title_en": "Project Scaffold Builder",
+      "desc_zh": "完成项目初始化、工具链配置与质量门禁落地。",
+      "desc_en": "Builds project scaffolding, tooling setup, and initial quality gates."
+    },
+    {
+      "id": "component-library-architect",
+      "category_zh": "架构与基建层",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "组件库架构师",
+      "title_en": "Component Library Architect",
+      "desc_zh": "设计组件库层次、令牌系统、变体策略与发布流程。",
+      "desc_en": "Designs component-library architecture, token system, and release process."
+    },
+    {
+      "id": "app-workspace-guide",
+      "category_zh": "架构与基建层",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "工作区基线识别",
+      "title_en": "App Workspace Guide",
+      "desc_zh": "识别 app 工作区技术基线、组件资产和目录约束。",
+      "desc_en": "Detects workspace baseline, component assets, and directory constraints."
+    },
+    {
+      "id": "skill-structure-governor",
+      "category_zh": "结构治理层",
+      "category_en": "Structure Governance",
+      "title_zh": "技能结构治理",
+      "title_en": "Skill Structure Governor",
+      "desc_zh": "校验双语入口与多平台包装结构完整性，保障分发一致性。",
+      "desc_en": "Validates bilingual entries and multi-platform packaging structure consistency."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Structure Governor"
+  short_description: "Validates bilingual entries and multi-platform packaging structure consistency."
+  default_prompt: "Use $skill-structure-governor to validate bilingual and multi-platform packaging structure."
+
+policy:
+  allow_implicit_invocation: true

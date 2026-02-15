@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Aesthetic Generator"
+  short_description: "Turns visual standards into generation-ready constraints and style rules."
+  default_prompt: "Use $ui-aesthetic-generator to generate style system and component visual specs."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Requirements Elicitation Engine"
+  short_description: "Clarifies ambiguous requirements via structured questions and generates PRD artifacts."
+  default_prompt: "Use $requirements-elicitation-engine to clarify my requirements and generate PRD draft artifacts."
+
+policy:
+  allow_implicit_invocation: true

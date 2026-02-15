@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Generation Workflow Runner"
+  short_description: "按四步法执行UI生成任务"
+  default_prompt: "Use $ui-generation-workflow-runner to execute structured UI generation workflow and quality gates."
+
+policy:
+  allow_implicit_invocation: true

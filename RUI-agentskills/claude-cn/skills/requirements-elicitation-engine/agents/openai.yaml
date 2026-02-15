@@ -1,0 +1,7 @@
+interface:
+  display_name: "Requirements Elicitation Engine"
+  short_description: "结构化反问并生成可执行PRD草案"
+  default_prompt: "Use $requirements-elicitation-engine to clarify my requirements and generate PRD draft artifacts."
+
+policy:
+  allow_implicit_invocation: true

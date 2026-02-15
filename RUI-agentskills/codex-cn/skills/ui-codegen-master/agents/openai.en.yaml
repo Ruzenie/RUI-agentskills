@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Codegen Master"
+  short_description: "Consolidates selection, design, generation, refactoring, and quality closure."
+  default_prompt: "Use $ui-codegen-master to generate or refactor production-ready UI code with quality checks."
+
+policy:
+  allow_implicit_invocation: true

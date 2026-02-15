@@ -1,0 +1,7 @@
+interface:
+  display_name: "SVG Canvas Icon Engine"
+  short_description: "Generates icon manifests, specs, and reusable SVG/Canvas assets."
+  default_prompt: "Use $svg-canvas-icon-engine to generate icon manifests/specs and reusable SVG/Canvas assets."
+
+policy:
+  allow_implicit_invocation: true

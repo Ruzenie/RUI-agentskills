@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Codegen Master"
+  short_description: "端到端 UI 生成、优化、抽离与验收"
+  default_prompt: "Use $ui-codegen-master to generate or refactor production-ready UI code with quality checks."
+
+policy:
+  allow_implicit_invocation: true

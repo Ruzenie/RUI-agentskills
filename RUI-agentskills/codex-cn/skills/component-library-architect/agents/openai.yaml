@@ -1,0 +1,7 @@
+interface:
+  display_name: "Component Library Architect"
+  short_description: "设计与演进可复用组件库"
+  default_prompt: "Use $component-library-architect to design component architecture and token system."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Selector Playbook"
+  short_description: "流程化完成UI组件库评审与决策文档"
+  default_prompt: "Use $ui-selector-playbook to run evaluation flow and generate decision records."
+
+policy:
+  allow_implicit_invocation: true

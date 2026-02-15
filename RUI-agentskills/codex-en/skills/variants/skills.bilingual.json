@@ -1,0 +1,167 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "ui-fullflow-orchestrator",
+      "category_zh": "Core Orchestration",
+      "category_en": "Core Orchestration",
+      "title_zh": "Fullflow Orchestration",
+      "title_en": "Fullflow Orchestration",
+      "desc_zh": "Orchestrates the full UI pipeline from requirements to acceptance with unified artifacts.",
+      "desc_en": "Orchestrates the full UI pipeline from requirements to acceptance with unified artifacts."
+    },
+    {
+      "id": "requirements-elicitation-engine",
+      "category_zh": "Core Orchestration",
+      "category_en": "Core Orchestration",
+      "title_zh": "Requirements Elicitation Engine",
+      "title_en": "Requirements Elicitation Engine",
+      "desc_zh": "Clarifies ambiguous requirements via structured questions and generates PRD artifacts.",
+      "desc_en": "Clarifies ambiguous requirements via structured questions and generates PRD artifacts."
+    },
+    {
+      "id": "ui-codegen-master",
+      "category_zh": "Core Orchestration",
+      "category_en": "Core Orchestration",
+      "title_zh": "UI Codegen Master",
+      "title_en": "UI Codegen Master",
+      "desc_zh": "Consolidates selection, design, generation, refactoring, and quality closure.",
+      "desc_en": "Consolidates selection, design, generation, refactoring, and quality closure."
+    },
+    {
+      "id": "ui-selector-pro",
+      "category_zh": "Selection & Decision",
+      "category_en": "Selection & Decision",
+      "title_zh": "UI Selector Pro",
+      "title_en": "UI Selector Pro",
+      "desc_zh": "Provides deterministic UI library recommendation, evaluation, and trade-off output.",
+      "desc_en": "Provides deterministic UI library recommendation, evaluation, and trade-off output."
+    },
+    {
+      "id": "ui-selector-playbook",
+      "category_zh": "Selection & Decision",
+      "category_en": "Selection & Decision",
+      "title_zh": "UI Selector Playbook",
+      "title_en": "UI Selector Playbook",
+      "desc_zh": "Supplies selection workflow, ADR patterns, and review strategies.",
+      "desc_en": "Supplies selection workflow, ADR patterns, and review strategies."
+    },
+    {
+      "id": "ui-aesthetic-coach",
+      "category_zh": "Aesthetic Strategy",
+      "category_en": "Aesthetic Strategy",
+      "title_zh": "UI Aesthetic Coach",
+      "title_en": "UI Aesthetic Coach",
+      "desc_zh": "Delivers visual critique, style direction, and token-oriented guidance.",
+      "desc_en": "Delivers visual critique, style direction, and token-oriented guidance."
+    },
+    {
+      "id": "ui-aesthetic-generator",
+      "category_zh": "Aesthetic Strategy",
+      "category_en": "Aesthetic Strategy",
+      "title_zh": "UI Aesthetic Generator",
+      "title_en": "UI Aesthetic Generator",
+      "desc_zh": "Turns visual standards into generation-ready constraints and style rules.",
+      "desc_en": "Turns visual standards into generation-ready constraints and style rules."
+    },
+    {
+      "id": "ui-generation-workflow-runner",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "UI Generation Workflow Runner",
+      "title_en": "UI Generation Workflow Runner",
+      "desc_zh": "Executes implementation via a four-step generation workflow.",
+      "desc_en": "Executes implementation via a four-step generation workflow."
+    },
+    {
+      "id": "style-scope-guard",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "Style Scope Guard",
+      "title_en": "Style Scope Guard",
+      "desc_zh": "Locks style-edit scope before changes and blocks out-of-scope edits.",
+      "desc_en": "Locks style-edit scope before changes and blocks out-of-scope edits."
+    },
+    {
+      "id": "svg-canvas-icon-engine",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "SVG Canvas Icon Engine",
+      "title_en": "SVG Canvas Icon Engine",
+      "desc_zh": "Generates icon manifests, specs, and reusable SVG/Canvas assets.",
+      "desc_en": "Generates icon manifests, specs, and reusable SVG/Canvas assets."
+    },
+    {
+      "id": "ui-component-extractor",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "UI Component Extractor",
+      "title_en": "UI Component Extractor",
+      "desc_zh": "Extracts reusable components based on refactor thresholds.",
+      "desc_en": "Extracts reusable components based on refactor thresholds."
+    },
+    {
+      "id": "frontend-standards-enforcer",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "Frontend Standards Enforcer",
+      "title_en": "Frontend Standards Enforcer",
+      "desc_zh": "Enforces frontend standards across structure, typing, performance, and quality.",
+      "desc_en": "Enforces frontend standards across structure, typing, performance, and quality."
+    },
+    {
+      "id": "ui-acceptance-auditor",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "UI Acceptance Auditor",
+      "title_en": "UI Acceptance Auditor",
+      "desc_zh": "Runs multi-dimension acceptance checks and release recommendations.",
+      "desc_en": "Runs multi-dimension acceptance checks and release recommendations."
+    },
+    {
+      "id": "ui-self-reviewer",
+      "category_zh": "Implementation",
+      "category_en": "Implementation",
+      "title_zh": "UI Self Reviewer",
+      "title_en": "UI Self Reviewer",
+      "desc_zh": "Performs pre-delivery self-review across code, visual, interaction, and aesthetics.",
+      "desc_en": "Performs pre-delivery self-review across code, visual, interaction, and aesthetics."
+    },
+    {
+      "id": "project-scaffold-builder",
+      "category_zh": "Architecture & Foundation",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "Project Scaffold Builder",
+      "title_en": "Project Scaffold Builder",
+      "desc_zh": "Builds project scaffolding, tooling setup, and initial quality gates.",
+      "desc_en": "Builds project scaffolding, tooling setup, and initial quality gates."
+    },
+    {
+      "id": "component-library-architect",
+      "category_zh": "Architecture & Foundation",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "Component Library Architect",
+      "title_en": "Component Library Architect",
+      "desc_zh": "Designs component-library architecture, token system, and release process.",
+      "desc_en": "Designs component-library architecture, token system, and release process."
+    },
+    {
+      "id": "app-workspace-guide",
+      "category_zh": "Architecture & Foundation",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "App Workspace Guide",
+      "title_en": "App Workspace Guide",
+      "desc_zh": "Detects workspace baseline, component assets, and directory constraints.",
+      "desc_en": "Detects workspace baseline, component assets, and directory constraints."
+    },
+    {
+      "id": "skill-structure-governor",
+      "category_zh": "Structure Governance",
+      "category_en": "Structure Governance",
+      "title_zh": "Skill Structure Governor",
+      "title_en": "Skill Structure Governor",
+      "desc_zh": "Validates bilingual entries and multi-platform packaging structure consistency.",
+      "desc_en": "Validates bilingual entries and multi-platform packaging structure consistency."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Scaffold Builder"
+  short_description: "快速搭建前端项目脚手架和质量门禁"
+  default_prompt: "Use $project-scaffold-builder to initialize a production-grade frontend scaffold."
+
+policy:
+  allow_implicit_invocation: true

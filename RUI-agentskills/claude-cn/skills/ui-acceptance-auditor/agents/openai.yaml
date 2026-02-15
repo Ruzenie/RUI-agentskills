@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Acceptance Auditor"
+  short_description: "按三级验收标准评估UI交付质量"
+  default_prompt: "Use $ui-acceptance-auditor to run level-0/1/2 acceptance checks on this UI delivery."
+
+policy:
+  allow_implicit_invocation: true

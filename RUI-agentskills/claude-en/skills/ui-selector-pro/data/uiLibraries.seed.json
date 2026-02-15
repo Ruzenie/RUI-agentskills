@@ -1,0 +1,440 @@
+{
+  "uiLibraries": [
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn/ui",
+      "description": "Modern React component approach based on Radix and Tailwind",
+      "category": "component",
+      "framework": [
+        "react"
+      ],
+      "designStyle": [
+        "modern",
+        "minimal"
+      ],
+      "githubStars": 90000,
+      "npmDownloads": "500k+/week",
+      "website": "https://ui.shadcn.com",
+      "github": "https://github.com/shadcn-ui/ui",
+      "npm": "https://www.npmjs.com/package/shadcn",
+      "features": [
+        "Customizable",
+        "Dark mode",
+        "TypeScript"
+      ],
+      "pros": [
+        "Code ownership",
+        "Modern style",
+        "Excellent accessibility"
+      ],
+      "cons": [
+        "Requires Tailwind",
+        "React only"
+      ],
+      "bundleSize": "on-demand import",
+      "accessibility": "excellent",
+      "customization": "high",
+      "learningCurve": "easy",
+      "community": "very-active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "excellent",
+      "useCases": [
+        "SaaS apps",
+        "Admin dashboards"
+      ],
+      "similarTo": [
+        "Radix UI"
+      ],
+      "version": "2.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    },
+    {
+      "id": "mantine",
+      "name": "Mantine",
+      "description": "React component library with rich components and hooks",
+      "category": "component",
+      "framework": [
+        "react"
+      ],
+      "designStyle": [
+        "modern",
+        "minimal"
+      ],
+      "githubStars": 25000,
+      "npmDownloads": "500k+/week",
+      "website": "https://mantine.dev",
+      "github": "https://github.com/mantinedev/mantine",
+      "npm": "https://www.npmjs.com/package/@mantine/core",
+      "features": [
+        "100+ components",
+        "Hooks",
+        "Dark mode"
+      ],
+      "pros": [
+        "High development efficiency",
+        "Comprehensive documentation",
+        "Feature complete"
+      ],
+      "cons": [
+        "Larger bundle size"
+      ],
+      "bundleSize": "~200KB",
+      "accessibility": "good",
+      "customization": "high",
+      "learningCurve": "easy",
+      "community": "very-active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "excellent",
+      "useCases": [
+        "Admin dashboards",
+        "Rapid development"
+      ],
+      "similarTo": [
+        "Chakra UI"
+      ],
+      "version": "7.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    },
+    {
+      "id": "chakra-ui",
+      "name": "Chakra UI",
+      "description": "React component library balanced for accessibility and DX",
+      "category": "component",
+      "framework": [
+        "react"
+      ],
+      "designStyle": [
+        "modern",
+        "minimal"
+      ],
+      "githubStars": 37000,
+      "npmDownloads": "800k+/week",
+      "website": "https://chakra-ui.com",
+      "github": "https://github.com/chakra-ui/chakra-ui",
+      "npm": "https://www.npmjs.com/package/@chakra-ui/react",
+      "features": [
+        "Theme system",
+        "Accessibility",
+        "Dark mode"
+      ],
+      "pros": [
+        "Good DX",
+        "Active community",
+        "Maintainable"
+      ],
+      "cons": [
+        "Runtime styling"
+      ],
+      "bundleSize": "~300KB",
+      "accessibility": "excellent",
+      "customization": "high",
+      "learningCurve": "easy",
+      "community": "active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "excellent",
+      "useCases": [
+        "SaaS apps",
+        "E-commerce"
+      ],
+      "similarTo": [
+        "Mantine"
+      ],
+      "version": "3.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    },
+    {
+      "id": "ant-design",
+      "name": "Ant Design",
+      "description": "Common enterprise admin React component library",
+      "category": "component",
+      "framework": [
+        "react"
+      ],
+      "designStyle": [
+        "ant"
+      ],
+      "githubStars": 92000,
+      "npmDownloads": "3M+/week",
+      "website": "https://ant.design",
+      "github": "https://github.com/ant-design/ant-design",
+      "npm": "https://www.npmjs.com/package/antd",
+      "features": [
+        "Comprehensive enterprise components",
+        "Data display",
+        "Internationalization"
+      ],
+      "pros": [
+        "Enterprise-proven",
+        "Comprehensive documentation",
+        "Stable ecosystem"
+      ],
+      "cons": [
+        "Large bundle size"
+      ],
+      "bundleSize": "~2MB",
+      "accessibility": "good",
+      "customization": "medium",
+      "learningCurve": "medium",
+      "community": "very-active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "excellent",
+      "useCases": [
+        "Enterprise backoffice",
+        "Operations system"
+      ],
+      "similarTo": [
+        "MUI"
+      ],
+      "version": "5.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    },
+    {
+      "id": "element-plus",
+      "name": "Element Plus",
+      "description": "Enterprise component library for Vue 3",
+      "category": "component",
+      "framework": [
+        "vue"
+      ],
+      "designStyle": [
+        "modern"
+      ],
+      "githubStars": 24000,
+      "npmDownloads": "700k+/week",
+      "website": "https://element-plus.org",
+      "github": "https://github.com/element-plus/element-plus",
+      "npm": "https://www.npmjs.com/package/element-plus",
+      "features": [
+        "Vue ecosystem",
+        "Enterprise components",
+        "Rich form components"
+      ],
+      "pros": [
+        "Strong Chinese ecosystem",
+        "Enterprise fit"
+      ],
+      "cons": [
+        "Medium customization cost"
+      ],
+      "bundleSize": "~800KB",
+      "accessibility": "good",
+      "customization": "medium",
+      "learningCurve": "easy",
+      "community": "active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "good",
+      "useCases": [
+        "Vue backoffice"
+      ],
+      "similarTo": [
+        "Ant Design Vue"
+      ],
+      "version": "2.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "Tailwind CSS",
+      "description": "Utility-first CSS framework",
+      "category": "css",
+      "framework": [
+        "universal"
+      ],
+      "designStyle": [
+        "custom",
+        "minimal"
+      ],
+      "githubStars": 82000,
+      "npmDownloads": "7M+/week",
+      "website": "https://tailwindcss.com",
+      "github": "https://github.com/tailwindlabs/tailwindcss",
+      "npm": "https://www.npmjs.com/package/tailwindcss",
+      "features": [
+        "Utility classes",
+        "Customizable",
+        "Broad ecosystem"
+      ],
+      "pros": [
+        "Good performance",
+        "Highly customizable",
+        "Active community"
+      ],
+      "cons": [
+        "Need to learn utility class naming"
+      ],
+      "bundleSize": "~10KB (production)",
+      "accessibility": "good",
+      "customization": "high",
+      "learningCurve": "medium",
+      "community": "very-active",
+      "enterpriseReady": true,
+      "typescript": true,
+      "darkMode": true,
+      "theming": true,
+      "documentation": "excellent",
+      "useCases": [
+        "All projects"
+      ],
+      "similarTo": [
+        "UnoCSS"
+      ],
+      "version": "4.x",
+      "license": "MIT",
+      "lastUpdate": "2026-01"
+    }
+  ],
+  "evaluationDimensions": [
+    {
+      "id": "accessibility",
+      "name": "Accessibility",
+      "description": "Accessibility support",
+      "weight": 0.2
+    },
+    {
+      "id": "customization",
+      "name": "Customization",
+      "description": "Theme and style extensibility",
+      "weight": 0.2
+    },
+    {
+      "id": "performance",
+      "name": "Performance",
+      "description": "Bundle size and runtime performance",
+      "weight": 0.15
+    },
+    {
+      "id": "developer-experience",
+      "name": "Developer Experience (DX)",
+      "description": "API and documentation experience",
+      "weight": 0.15
+    },
+    {
+      "id": "ecosystem",
+      "name": "Ecosystem",
+      "description": "Community activity and ecosystem",
+      "weight": 0.15
+    },
+    {
+      "id": "enterprise-readiness",
+      "name": "Enterprise Readiness",
+      "description": "Production stability and long-term maintenance",
+      "weight": 0.15
+    }
+  ],
+  "useCases": [
+    {
+      "id": "enterprise-admin",
+      "name": "Enterprise admin dashboard",
+      "description": "Enterprise management system",
+      "recommendedLibraries": [
+        "ant-design",
+        "element-plus",
+        "mantine"
+      ],
+      "keyRequirements": [
+        "Forms",
+        "Tables",
+        "Permissions"
+      ]
+    },
+    {
+      "id": "saas-modern",
+      "name": "Modern SaaS app",
+      "description": "Modern web app",
+      "recommendedLibraries": [
+        "shadcn-ui",
+        "chakra-ui",
+        "mantine"
+      ],
+      "keyRequirements": [
+        "Modern style",
+        "Responsive",
+        "Accessibility"
+      ]
+    },
+    {
+      "id": "design-system",
+      "name": "Design system",
+      "description": "Scalable component system",
+      "recommendedLibraries": [
+        "shadcn-ui",
+        "tailwindcss"
+      ],
+      "keyRequirements": [
+        "Customizable",
+        "Reusability"
+      ]
+    },
+    {
+      "id": "rapid-prototype",
+      "name": "Rapid prototype",
+      "description": "MVP and rapid validation",
+      "recommendedLibraries": [
+        "mantine",
+        "chakra-ui",
+        "tailwindcss"
+      ],
+      "keyRequirements": [
+        "Development speed",
+        "Low barrier"
+      ]
+    }
+  ],
+  "designTrends": [
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "description": "Translucent blurred layering",
+      "characteristics": [
+        "Translucent",
+        "Blur",
+        "Highlight borders"
+      ],
+      "applicableLibraries": [
+        "shadcn-ui",
+        "tailwindcss"
+      ],
+      "useCases": [
+        "Tech products"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "minimalism",
+      "name": "Minimalism",
+      "description": "Whitespace and content-first approach",
+      "characteristics": [
+        "Whitespace",
+        "Simplicity"
+      ],
+      "applicableLibraries": [
+        "shadcn-ui",
+        "chakra-ui"
+      ],
+      "useCases": [
+        "SaaS"
+      ],
+      "year": 2026
+    }
+  ]
+}

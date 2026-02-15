@@ -1,0 +1,7 @@
+interface:
+  display_name: "Style Scope Guard"
+  short_description: "锁定样式改动范围，阻断非目标代码改动"
+  default_prompt: "Use $style-scope-guard to lock style-change scope before implementation, and refuse out-of-scope edits."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Standards Enforcer"
+  short_description: "依据前端规范进行检查和修复建议"
+  default_prompt: "Use $frontend-standards-enforcer to enforce project frontend coding standards."
+
+policy:
+  allow_implicit_invocation: true
