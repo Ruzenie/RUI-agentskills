@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-02-16T01:28:58",
   "source_skills_dir": "/home/ruzenie/ai/ruiskills/RUI-agentskills",
-  "skill_count": 18,
+  "skill_count": 19,
   "bundles": [
     {
       "name": "codex-cn",

@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Agent Workspace"
+  short_description: "用于建立Workspace/Canvas/日志一体化的Markdown优先UI协作流程"
+  default_prompt: "Use $ui-agent-workspace to set up a markdown-first UI workspace with canvas design and structured UI change logs before coding."
+
+policy:
+  allow_implicit_invocation: true

@@ -2,7 +2,7 @@
 
 **A production-oriented UI skill system that plugs directly into Codex / Claude.**
 
-![Skills](https://img.shields.io/badge/skills-18-2563eb)
+![Skills](https://img.shields.io/badge/skills-19-2563eb)
 ![Pipeline](https://img.shields.io/badge/fullflow-5_phase-16a34a)
 ![Focus](https://img.shields.io/badge/focus-implementation%20%26%20verification-f59e0b)
 
@@ -95,9 +95,12 @@ This set links requirement clarification, style scope control, implementation, a
 17. `app-workspace-guide`
 - Baseline detection for `app/` workspace environment and component assets.
 
+18. `ui-agent-workspace`
+- Turns workspace state, canvas design, and UI change logs into a traceable collaboration workflow.
+
 ## Structure Governance
 
-18. `skill-structure-governor`
+19. `skill-structure-governor`
 - Governance for bilingual entries and multi-platform packaging templates (structure-only, no business-feature migration).
 - Script: `skills/skill-structure-governor/scripts/validate_structure.py`
 
@@ -110,10 +113,11 @@ This set links requirement clarification, style scope control, implementation, a
 5. Aesthetic strategy: `ui-aesthetic-coach` + `ui-aesthetic-generator`
 6. Icon system (optional): `svg-canvas-icon-engine`
 7. Workspace baseline: `app-workspace-guide`
-8. Generation: `ui-generation-workflow-runner`
-9. Refactor & standards: `ui-component-extractor` + `frontend-standards-enforcer`
-10. Quality closure: `ui-acceptance-auditor` + `ui-self-reviewer`
-11. Final convergence: `ui-codegen-master`
+8. Workspace collaboration: `ui-agent-workspace`
+9. Generation: `ui-generation-workflow-runner`
+10. Refactor & standards: `ui-component-extractor` + `frontend-standards-enforcer`
+11. Quality closure: `ui-acceptance-auditor` + `ui-self-reviewer`
+12. Final convergence: `ui-codegen-master`
 
 Run structure validation before release/distribution: `skill-structure-governor`
 

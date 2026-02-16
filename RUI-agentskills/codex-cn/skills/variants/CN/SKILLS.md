@@ -50,10 +50,12 @@
 - 组件库架构师：设计组件库层次、令牌系统、变体策略与发布流程。
 17. `app-workspace-guide`
 - 工作区基线识别：识别 app 工作区技术基线、组件资产和目录约束。
+18. `ui-agent-workspace`
+- UI 工作空间协作：将 Workspace、Canvas 与 UI 修改日志协议整合为可执行协作流程，保障设计到代码的可追溯交付。
 
 ## 结构治理层
 
-18. `skill-structure-governor`
+19. `skill-structure-governor`
 - 技能结构治理：校验双语入口与多平台包装结构完整性，保障分发一致性。
 
 校验命令：`python3 skills/skill-structure-governor/scripts/validate_structure.py`

@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Agent Workspace"
+  short_description: "Builds a markdown-first UI workflow with workspace state, canvas design, and structured change logs."
+  default_prompt: "Use $ui-agent-workspace to set up a markdown-first UI workspace with canvas design and structured UI change logs before coding."
+
+policy:
+  allow_implicit_invocation: true

@@ -8,7 +8,7 @@
 </p>
 
 ![Bundles](https://img.shields.io/badge/bundles-4-2563eb)
-![Skills](https://img.shields.io/badge/skills-18-16a34a)
+![Skills](https://img.shields.io/badge/skills-19-16a34a)
 ![Platforms](https://img.shields.io/badge/platform-codex%20%7C%20claude-f59e0b)
 
 ## Project Overview
@@ -22,7 +22,7 @@ The objective is not suggestion-only assistance, but stable progression to **run
 Highlights:
 
 1. 4 ready-to-use bundles (Codex / Claude × CN / EN)
-2. 18 collaborative skills with fullflow orchestration
+2. 19 collaborative skills with fullflow orchestration
 3. Style-scope lock to reduce accidental business-logic edits
 4. Support for global installation to `~/.codex/skills`
 
@@ -66,7 +66,7 @@ Each bundle includes:
 - Claude bundles: `CLAUDE.md`
 
 2. Skill implementation directory  
-- `skills/` (18 skills)
+- `skills/` (19 skills)
 
 3. Variant/platform/contracts metadata  
 - `skills/variants/*`  

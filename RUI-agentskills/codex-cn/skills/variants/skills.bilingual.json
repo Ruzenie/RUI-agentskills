@@ -155,6 +155,15 @@
       "desc_en": "Detects workspace baseline, component assets, and directory constraints."
     },
     {
+      "id": "ui-agent-workspace",
+      "category_zh": "架构与基建层",
+      "category_en": "Architecture & Foundation",
+      "title_zh": "UI 工作空间协作",
+      "title_en": "UI Agent Workspace",
+      "desc_zh": "将 Workspace、Canvas 与 UI 修改日志协议整合为可执行协作流程，保障设计到代码的可追溯交付。",
+      "desc_en": "Integrates workspace state, canvas design, and UI change logging into an executable collaboration workflow."
+    },
+    {
       "id": "skill-structure-governor",
       "category_zh": "结构治理层",
       "category_en": "Structure Governance",

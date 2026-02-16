@@ -2,7 +2,7 @@
 
 **一套可直接挂载到 Codex / Claude 的 UI 研发技能系统。**
 
-![Skills](https://img.shields.io/badge/skills-18-2563eb)
+![Skills](https://img.shields.io/badge/skills-19-2563eb)
 ![Pipeline](https://img.shields.io/badge/fullflow-5_phase-16a34a)
 ![Focus](https://img.shields.io/badge/focus-implementation%20%26%20verification-f59e0b)
 
@@ -95,9 +95,12 @@
 17. `app-workspace-guide`
 - `app/` 工作区环境与组件资产基线识别。
 
+18. `ui-agent-workspace`
+- 将 Workspace、Canvas 和 UI 修改日志整合为可追溯协作流程。
+
 ## 结构治理层
 
-18. `skill-structure-governor`
+19. `skill-structure-governor`
 - 双语入口与多平台包装模板治理（结构校验，不迁移业务功能）。
 - 脚本：`skills/skill-structure-governor/scripts/validate_structure.py`
 
@@ -123,6 +126,12 @@
 - `icon-library.html` -> `svg-canvas-icon-engine`
 - `app/README.md` -> `app-workspace-guide`
 - `app/info.md` -> `app-workspace-guide`
+- `skills/ui-agent-workspace/references/01-core-concept.md` -> `ui-agent-workspace`
+- `skills/ui-agent-workspace/references/02-workspace-manager.md` -> `ui-agent-workspace`
+- `skills/ui-agent-workspace/references/03-ui-modification-log.md` -> `ui-agent-workspace`
+- `skills/ui-agent-workspace/references/04-canvas-system.md` -> `ui-agent-workspace`
+- `skills/ui-agent-workspace/references/05-markdown-graphics.md` -> `ui-agent-workspace`
+- `skills/ui-agent-workspace/references/06-component-library.md` -> `ui-agent-workspace`
 - `AI_UI_Skill_Design_Document.md` -> `ui-fullflow-orchestrator` / `ui-acceptance-auditor` / `ui-self-reviewer` / `ui-codegen-master`
 - `AI前端开发技能规范.md` -> `ui-fullflow-orchestrator` / `frontend-standards-enforcer` / `ui-self-reviewer` / `ui-codegen-master`
 - `mimoskills.md` -> `ui-fullflow-orchestrator` / `requirements-elicitation-engine` / `ui-codegen-master`
@@ -140,10 +149,11 @@
 5. 风格：`ui-aesthetic-coach` + `ui-aesthetic-generator`
 6. 图标系统（按需）：`svg-canvas-icon-engine`
 7. 环境基线：`app-workspace-guide`
-8. 生成：`ui-generation-workflow-runner`
-9. 重构与规范：`ui-component-extractor` + `frontend-standards-enforcer`
-10. 质量闭环：`ui-acceptance-auditor` + `ui-self-reviewer`
-11. 总控收敛：`ui-codegen-master`
+8. 协作工作区：`ui-agent-workspace`
+9. 生成：`ui-generation-workflow-runner`
+10. 重构与规范：`ui-component-extractor` + `frontend-standards-enforcer`
+11. 质量闭环：`ui-acceptance-auditor` + `ui-self-reviewer`
+12. 总控收敛：`ui-codegen-master`
 
 发布与分发前可追加结构校验：`skill-structure-governor`
 

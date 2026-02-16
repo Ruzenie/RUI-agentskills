@@ -50,10 +50,12 @@ This file is generated from the bilingual catalog.
 - Component Library Architect: Designs component-library architecture, token system, and release process.
 17. `app-workspace-guide`
 - App Workspace Guide: Detects workspace baseline, component assets, and directory constraints.
+18. `ui-agent-workspace`
+- UI Agent Workspace: Integrates workspace state, canvas design, and UI change logging into an executable collaboration workflow.
 
 ## Structure Governance
 
-18. `skill-structure-governor`
+19. `skill-structure-governor`
 - Skill Structure Governor: Validates bilingual entries and multi-platform packaging structure consistency.
 
 Validation command: `python3 skills/skill-structure-governor/scripts/validate_structure.py`

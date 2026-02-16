@@ -8,7 +8,7 @@
 </p>
 
 ![Bundles](https://img.shields.io/badge/bundles-4-2563eb)
-![Skills](https://img.shields.io/badge/skills-18-16a34a)
+![Skills](https://img.shields.io/badge/skills-19-16a34a)
 ![Platforms](https://img.shields.io/badge/platform-codex%20%7C%20claude-f59e0b)
 
 ## 项目简介
@@ -19,7 +19,7 @@
 核心特点：
 
 1. 四套可直接使用的分发包（Codex / Claude × 中文 / 英文）
-2. 18 个协作技能，支持全流程串联
+2. 19 个协作技能，支持全流程串联
 3. 样式改动边界锁，降低误改业务逻辑风险
 4. 支持全局安装到 `~/.codex/skills`
 
@@ -63,7 +63,7 @@
 - Claude 包：`CLAUDE.md`
 
 2. 技能实现目录  
-- `skills/`（18 个技能）
+- `skills/`（19 个技能）
 
 3. 双语索引与结构配置  
 - `skills/variants/*`  
