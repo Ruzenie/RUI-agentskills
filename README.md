@@ -44,6 +44,53 @@ Highlights:
 
 ---
 
+## Full Skill Catalog (19)
+
+The top-level distribution includes all 19 skills below:
+
+### Core Orchestration
+
+1. `ui-fullflow-orchestrator` - Orchestrates the full UI pipeline from requirements to acceptance.
+2. `requirements-elicitation-engine` - Clarifies ambiguous requirements and generates PRD artifacts.
+3. `ui-codegen-master` - Consolidates selection, design, generation, refactoring, and quality closure.
+
+### Selection & Decision
+
+4. `ui-selector-pro` - Provides deterministic UI library recommendation, evaluation, and trade-off output.
+5. `ui-selector-playbook` - Supplies selection workflow, ADR patterns, and review strategies.
+
+### Aesthetic Strategy
+
+6. `ui-aesthetic-coach` - Delivers visual critique, style direction, and token-oriented guidance.
+7. `ui-aesthetic-generator` - Turns visual standards into generation-ready constraints and style rules.
+
+### Implementation
+
+8. `ui-generation-workflow-runner` - Executes implementation via a four-step generation workflow.
+9. `style-scope-guard` - Locks style-edit scope before changes and blocks out-of-scope edits.
+10. `svg-canvas-icon-engine` - Generates icon manifests, specs, and reusable SVG/Canvas assets.
+11. `ui-component-extractor` - Extracts reusable components based on refactor thresholds.
+12. `frontend-standards-enforcer` - Enforces frontend standards across structure, typing, performance, and quality.
+13. `ui-acceptance-auditor` - Runs multi-dimension acceptance checks and release recommendations.
+14. `ui-self-reviewer` - Performs pre-delivery self-review across code, visual, interaction, and aesthetics.
+
+### Architecture & Foundation
+
+15. `project-scaffold-builder` - Builds project scaffolding, tooling setup, and initial quality gates.
+16. `component-library-architect` - Designs component-library architecture, token system, and release process.
+17. `app-workspace-guide` - Detects workspace baseline, component assets, and directory constraints.
+18. `ui-agent-workspace` - Integrates workspace state, canvas design, and UI change logging into an executable workflow.
+
+### Structure Governance
+
+19. `skill-structure-governor` - Validates bilingual entries and multi-platform packaging structure consistency.
+
+For bilingual generated indexes, see:
+- `RUI-agentskills/codex-cn/skills/variants/CN/SKILLS.md`
+- `RUI-agentskills/codex-en/skills/variants/EN/SKILLS.md`
+
+---
+
 ## 1. Exported Bundles in This Folder
 
 Four ready-to-use bundles are exported under `RUI-agentskills/`:

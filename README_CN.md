@@ -41,6 +41,53 @@
 
 ---
 
+## 完整技能清单（19）
+
+顶层分发包包含以下 19 个技能：
+
+### 核心编排层
+
+1. `ui-fullflow-orchestrator` - 串联需求、选型、审美、实现、验收与自评的全流程编排。
+2. `requirements-elicitation-engine` - 通过结构化追问补全模糊需求并产出 PRD 相关材料。
+3. `ui-codegen-master` - 统筹选型、设计、生成、重构与质量收敛。
+
+### 选型决策层
+
+4. `ui-selector-pro` - 提供确定性的 UI 组件库推荐、评估与对比结果。
+5. `ui-selector-playbook` - 提供选型流程、ADR 模板和评审策略。
+
+### 审美策略层
+
+6. `ui-aesthetic-coach` - 提供视觉诊断、风格方向与令牌化建议。
+7. `ui-aesthetic-generator` - 将审美规范转成可执行的生成约束与视觉规则。
+
+### 研发执行层
+
+8. `ui-generation-workflow-runner` - 按四步法推进 UI 实现。
+9. `style-scope-guard` - 修改前锁定样式边界，阻断越界改动。
+10. `svg-canvas-icon-engine` - 生成图标清单、规范与可复用 SVG/Canvas 资源。
+11. `ui-component-extractor` - 按阈值执行组件抽离与重构。
+12. `frontend-standards-enforcer` - 执行前端结构、类型、性能与质量规范检查。
+13. `ui-acceptance-auditor` - 执行多维验收并给出发布建议。
+14. `ui-self-reviewer` - 从代码、视觉、交互、审美四维做交付前自评。
+
+### 架构与基建层
+
+15. `project-scaffold-builder` - 完成项目脚手架、工具链与质量门禁初始化。
+16. `component-library-architect` - 设计组件库架构、令牌系统与发布流程。
+17. `app-workspace-guide` - 识别 app 工作区技术基线、组件资产与目录约束。
+18. `ui-agent-workspace` - 将 Workspace、Canvas 与 UI 修改日志整合为可执行协作流程。
+
+### 结构治理层
+
+19. `skill-structure-governor` - 校验双语入口与多平台打包结构一致性。
+
+双语自动索引可参考：
+- `RUI-agentskills/codex-cn/skills/variants/CN/SKILLS.md`
+- `RUI-agentskills/codex-en/skills/variants/EN/SKILLS.md`
+
+---
+
 ## 1. 目录与已导出包
 
 当前目录已导出 4 套可直接使用的技能包（位于 `RUI-agentskills/`）：
