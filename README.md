@@ -4,9 +4,6 @@
 
 **Production-Ready UI Engineering Skills for AI Agents**
 
-> Usage note: RUI supports two integration modes.  
-> 1) `skills + AGENTS.md/CLAUDE.md` (for in-chat skill invocation);  
-> 2) `rui CLI` (for scripted execution, run inside a bundle directory, or set `SKILLS_DIR=<bundle>/skills` to run from anywhere).
 
 <p>
   <a href="https://github.com/yourusername/RUI-agentskills"><img src="https://img.shields.io/badge/Release-v1.0.0-2563eb?style=flat-square&logo=github" alt="Release"></a>
@@ -30,6 +27,7 @@
 
 - [✨ Features](#-features)
 - [🚀 Quick Start](#-quick-start)
+- [🧭 Command Reference](#-command-reference)
 - [📦 Available Bundles](#-available-bundles)
 - [🔧 Skill Catalog](#-skill-catalog)
 - [💡 Usage Examples](#-usage-examples)
@@ -126,6 +124,72 @@ After installation, follow the steps below to start in chat with `$ui`.
    $ui Build a SaaS analytics dashboard with responsive layout and chart modules
 3) For explicit invocation, use:
    $ui-fullflow-orchestrator Build a SaaS analytics dashboard with responsive layout and chart modules
+```
+
+---
+
+## 🧭 Command Reference
+
+### Chat Commands
+
+| Category | Command | Purpose |
+|---|---|---|
+| Fullflow alias | `$ui` | Alias of `$ui-fullflow-orchestrator`, starts end-to-end UI flow |
+| Fullflow explicit | `$ui-fullflow-orchestrator` | Explicitly invoke the fullflow orchestrator |
+| Skill targeting | `$<skill-name>` | Invoke any specific skill directly (full list below) |
+| Full-authorization mode | `~auto` / `~helloauto` / `~fa` | Run continuously: analysis → design → implementation |
+| Planning mode | `~plan` / `~design` | Run continuously: analysis → design |
+| Execution mode | `~exec` / `~run` / `~execute` | Execute an existing plan package under `plan/` |
+| Knowledge base mode | `~init` / `~wiki` | Initialize or rebuild the knowledge base |
+
+
+Skill command purpose map:
+
+| Command | Purpose |
+|---|---|
+| `$ui-fullflow-orchestrator` | End-to-end orchestrator that chains selection, aesthetics, generation, acceptance, and self-review. |
+| `$requirements-elicitation-engine` | Requirement clarification with structured Q&A and PRD draft output. |
+| `$ui-codegen-master` | Unified controller for UI code generation and delivery convergence. |
+| `$ui-selector-pro` | UI library evaluation and recommendation engine. |
+| `$ui-selector-playbook` | Selection workflow, review checklist, and ADR decision templates. |
+| `$ui-aesthetic-coach` | Aesthetic diagnosis and visual improvement guidance. |
+| `$ui-aesthetic-generator` | Converts aesthetic standards into executable tokens and generation constraints. |
+| `$ui-generation-workflow-runner` | Runs UI generation in a structured four-step workflow. |
+| `$style-scope-guard` | Locks style-edit boundaries to prevent out-of-scope changes. |
+| `$svg-canvas-icon-engine` | Generates SVG/Canvas icon assets and manifests. |
+| `$ui-component-extractor` | Detects and executes component extraction/refactoring opportunities. |
+| `$frontend-standards-enforcer` | Enforces frontend code standards, structure, and performance constraints. |
+| `$ui-acceptance-auditor` | Performs three-level acceptance auditing and pass/fail recommendation. |
+| `$ui-self-reviewer` | Four-domain self-review: code, visual, interaction, and aesthetics. |
+| `$project-scaffold-builder` | Initializes project scaffolding and engineering baseline configuration. |
+| `$component-library-architect` | Designs component-library architecture, token system, and variants strategy. |
+| `$app-workspace-guide` | Extracts runtime context and asset baseline from `app/` workspace docs. |
+| `$ui-agent-workspace` | Manages UI collaboration workspace state, canvas, and modification logs. |
+| `$skill-structure-governor` | Governs skill structure consistency across language and platform bundles. |
+
+### Script Commands
+
+```bash
+# Fullflow pipeline
+bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh --brief "SaaS analytics dashboard" --framework react --project-type saas-modern
+
+# Style scope lock
+python3 skills/style-scope-guard/scripts/build_style_scope_lock.py --brief "Update hero" --target "Hero"
+
+# Requirements elicitation
+python3 skills/requirements-elicitation-engine/scripts/generate_requirements_brief.py --brief "Build a product landing page" --out-dir ./requirements --json
+
+# Design token generation
+python3 skills/ui-aesthetic-coach/scripts/generate_design_tokens.py --direction "Data Clarity" --density comfortable --format both
+
+# Bundle export
+python3 skills/skill-structure-governor/scripts/export_skill_bundles.py --out-dir RUI-agentskills --clean
+
+# Structure validation
+python3 skills/skill-structure-governor/scripts/validate_structure.py
+
+# Bilingual index generation
+python3 skills/skill-structure-governor/scripts/render_bilingual_index.py
 ```
 
 ---

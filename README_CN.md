@@ -26,6 +26,7 @@
 
 - [✨ 核心特性](#-核心特性)
 - [🚀 快速开始](#-快速开始)
+- [🧭 全命令速查](#-全命令速查)
 - [📦 分发包说明](#-分发包说明)
 - [🔧 技能全景图](#-技能全景图)
 - [💡 使用示例](#-使用示例)
@@ -122,6 +123,72 @@ cp RUI-agentskills/codex-cn/AGENTS.md /path/to/your/project/AGENTS.md
    $ui 创建一个 SaaS 数据分析仪表盘，支持响应式布局和图表模块
 3) 如需显式点名，可使用：
    $ui-fullflow-orchestrator 创建一个 SaaS 数据分析仪表盘，支持响应式布局和图表模块
+```
+
+---
+
+## 🧭 全命令速查
+
+### 对话命令
+
+| 类别 | 命令 | 作用 |
+|---|---|---|
+| 全流程快捷命令 | `$ui` | 等价于 `$ui-fullflow-orchestrator`，启动 UI 全流程 |
+| 全流程显式命令 | `$ui-fullflow-orchestrator` | 显式调用全流程编排技能 |
+| 指定技能命令 | `$<skill-name>` | 点名任意技能执行（见下方完整清单） |
+| 全授权模式 | `~auto` / `~helloauto` / `~fa` | 连续执行：需求分析 → 方案设计 → 开发实施 |
+| 规划模式 | `~plan` / `~design` | 连续执行：需求分析 → 方案设计 |
+| 执行模式 | `~exec` / `~run` / `~execute` | 执行 `plan/` 中已有方案包 |
+| 知识库模式 | `~init` / `~wiki` | 初始化或重建知识库 |
+
+
+技能命名作用对照：
+
+| 命令 | 作用 |
+|---|---|
+| `$ui-fullflow-orchestrator` | 全流程编排总入口，串联选型、审美、生成、验收和自评。 |
+| `$requirements-elicitation-engine` | 需求澄清与反问，生成结构化需求和 PRD 草案。 |
+| `$ui-codegen-master` | UI 代码生成总控，统一技术实现与质量收敛。 |
+| `$ui-selector-pro` | UI 组件库选型评估与推荐。 |
+| `$ui-selector-playbook` | 选型流程、评审清单与 ADR 决策模板。 |
+| `$ui-aesthetic-coach` | 审美诊断与视觉优化建议。 |
+| `$ui-aesthetic-generator` | 将审美规范转为可执行设计令牌与生成约束。 |
+| `$ui-generation-workflow-runner` | 按四步法执行 UI 生成流程。 |
+| `$style-scope-guard` | 锁定样式改动边界，防止越界改动。 |
+| `$svg-canvas-icon-engine` | 生成 SVG/Canvas 图标资源与清单。 |
+| `$ui-component-extractor` | 识别并执行组件抽离与重构。 |
+| `$frontend-standards-enforcer` | 前端代码规范、结构和性能约束检查。 |
+| `$ui-acceptance-auditor` | 三级验收评估与通过判定。 |
+| `$ui-self-reviewer` | 代码/视觉/交互/审美四维自审。 |
+| `$project-scaffold-builder` | 项目脚手架与工程基础配置初始化。 |
+| `$component-library-architect` | 组件库架构、令牌体系与变体策略设计。 |
+| `$app-workspace-guide` | 从 `app/` 工作区提取运行上下文与资产基线。 |
+| `$ui-agent-workspace` | 管理 UI 协作工作区状态、画布和变更日志。 |
+| `$skill-structure-governor` | 技能结构治理与双语/多平台一致性校验。 |
+
+### 终端脚本命令
+
+```bash
+# 全流程流水线
+bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh --brief "SaaS 数据看板" --framework react --project-type saas-modern
+
+# 样式边界锁
+python3 skills/style-scope-guard/scripts/build_style_scope_lock.py --brief "更新首屏" --target "Hero"
+
+# 需求澄清
+python3 skills/requirements-elicitation-engine/scripts/generate_requirements_brief.py --brief "构建产品落地页" --out-dir ./requirements --json
+
+# 设计令牌生成
+python3 skills/ui-aesthetic-coach/scripts/generate_design_tokens.py --direction "Data Clarity" --density comfortable --format both
+
+# 分发包导出
+python3 skills/skill-structure-governor/scripts/export_skill_bundles.py --out-dir RUI-agentskills --clean
+
+# 结构校验
+python3 skills/skill-structure-governor/scripts/validate_structure.py
+
+# 双语索引生成
+python3 skills/skill-structure-governor/scripts/render_bilingual_index.py
 ```
 
 ---
