@@ -35,7 +35,7 @@ bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh \
   --density comfortable
 ```
 
-默认输出目录：`.fullflow-output/<timestamp>/`
+默认输出目录（当前工作区）：`Ruiagents/<timestamp>/`（可用 `--workspace-root` 或 `--out-dir` 覆盖）
 
 产物：
 - `flow.input.json`

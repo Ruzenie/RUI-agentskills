@@ -35,7 +35,7 @@ bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh \
   --density comfortable
 ```
 
-Default output directory: `.fullflow-output/<timestamp>/`
+Default output directory (current workspace): `Ruiagents/<timestamp>/` (override with `--workspace-root` or `--out-dir`)
 
 Artifacts:
 - `flow.input.json`

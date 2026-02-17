@@ -33,6 +33,7 @@ Options:
   --brand-color <#RRGGBB>
   --top <n>
   --out-dir <dir>
+  --workspace-root <dir>      (默认使用调用命令时的工作区目录)
   --direction <name>
 USAGE
 }
@@ -52,7 +53,49 @@ DENSITY="comfortable"
 BRAND_COLOR=""
 TOP="5"
 OUT_DIR=""
+WORKSPACE_ROOT_ARG=""
 DIRECTION=""
+CALLER_PWD="$(pwd -P)"
+
+is_under_repo_root() {
+  local candidate="$1"
+  case "$candidate" in
+    "$REPO_ROOT"|"$REPO_ROOT"/*) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+resolve_workspace_root() {
+  local candidate=""
+  if [[ -n "$WORKSPACE_ROOT_ARG" ]]; then
+    candidate="$WORKSPACE_ROOT_ARG"
+  elif [[ -n "${RUI_WORKSPACE_ROOT:-}" ]]; then
+    candidate="$RUI_WORKSPACE_ROOT"
+  else
+    candidate="$CALLER_PWD"
+    if is_under_repo_root "$candidate"; then
+      if [[ -n "${OLDPWD:-}" && -d "${OLDPWD:-}" ]]; then
+        local oldpwd_real
+        oldpwd_real="$(cd "${OLDPWD}" && pwd -P)"
+        if ! is_under_repo_root "$oldpwd_real"; then
+          candidate="$oldpwd_real"
+        fi
+      fi
+    fi
+  fi
+
+  if [[ "$candidate" != /* ]]; then
+    candidate="$CALLER_PWD/$candidate"
+  fi
+
+  if [[ -d "$candidate" ]]; then
+    (cd "$candidate" && pwd -P)
+    return
+  fi
+
+  echo "Error: workspace root 不存在: $candidate" >&2
+  exit 1
+}
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -85,6 +128,7 @@ while [[ $# -gt 0 ]]; do
     --brand-color) BRAND_COLOR="$2"; shift 2 ;;
     --top) TOP="$2"; shift 2 ;;
     --out-dir) OUT_DIR="$2"; shift 2 ;;
+    --workspace-root) WORKSPACE_ROOT_ARG="$2"; shift 2 ;;
     --direction) DIRECTION="$2"; shift 2 ;;
     -h|--help) usage; exit 0 ;;
     *) echo "Unknown arg: $1"; usage; exit 1 ;;
@@ -106,8 +150,11 @@ if [[ "$ICON_MODE" != "auto" && "$ICON_MODE" != "on" && "$ICON_MODE" != "off" ]]
   exit 1
 fi
 
+WORKSPACE_ROOT="$(resolve_workspace_root)"
 if [[ -z "$OUT_DIR" ]]; then
-  OUT_DIR="$REPO_ROOT/.fullflow-output/$(date +%Y%m%d-%H%M%S)"
+  OUT_DIR="$WORKSPACE_ROOT/Ruiagents/$(date +%Y%m%d-%H%M%S)"
+elif [[ "$OUT_DIR" != /* ]]; then
+  OUT_DIR="$WORKSPACE_ROOT/$OUT_DIR"
 fi
 mkdir -p "$OUT_DIR"
 
@@ -301,11 +348,11 @@ fi
 )
 
 WORKSPACE_BASELINE="未检测到 app/info.md"
-if [[ -f "$REPO_ROOT/app/info.md" ]]; then
-  WORKSPACE_BASELINE="$(head -n 1 "$REPO_ROOT/app/info.md")"
+if [[ -f "$WORKSPACE_ROOT/app/info.md" ]]; then
+  WORKSPACE_BASELINE="$(head -n 1 "$WORKSPACE_ROOT/app/info.md")"
 fi
 
-export FLOW_INPUT_PATH REQ_SUMMARY_PATH REQ_PRD_PATH REQ_QUESTIONS_PATH STYLE_PROFILE_PATH STYLE_SCOPE_LOCK_PATH STYLE_SCOPE_CHECKLIST_PATH ICON_MANIFEST_PATH ICON_SPEC_PATH ICON_SPRITE_PATH ICON_CANVAS_DEMO_PATH ICON_ENABLED RECOMMEND_PATH EVALUATE_PATH SCORE_PATH TOKENS_JSON_PATH TOKENS_CSS_PATH SCORECARD_PATH OPTIMIZATION_PLAN_PATH REPORT_PATH STAGE_STATUS_PATH QUALITY_GATES_PATH DECISION_TRACE_PATH WORKSPACE_BASELINE DIRECTION
+export FLOW_INPUT_PATH REQ_SUMMARY_PATH REQ_PRD_PATH REQ_QUESTIONS_PATH STYLE_PROFILE_PATH STYLE_SCOPE_LOCK_PATH STYLE_SCOPE_CHECKLIST_PATH ICON_MANIFEST_PATH ICON_SPEC_PATH ICON_SPRITE_PATH ICON_CANVAS_DEMO_PATH ICON_ENABLED RECOMMEND_PATH EVALUATE_PATH SCORE_PATH TOKENS_JSON_PATH TOKENS_CSS_PATH SCORECARD_PATH OPTIMIZATION_PLAN_PATH REPORT_PATH STAGE_STATUS_PATH QUALITY_GATES_PATH DECISION_TRACE_PATH WORKSPACE_BASELINE WORKSPACE_ROOT DIRECTION
 python3 - <<'PY'
 import json, os
 
@@ -575,6 +622,7 @@ lines.append(f"- priorities: {', '.join(flow.get('priorities', [])) or 'none'}")
 lines.append(f"- design_style: {flow.get('design_style') or 'none'}")
 lines.append(f"- team_size: {flow.get('team_size') or 'none'}")
 lines.append(f"- density: {flow.get('density', '')}")
+lines.append(f"- workspace_root: {os.environ.get('WORKSPACE_ROOT', '')}")
 lines.append(f"- workspace_baseline: {os.environ.get('WORKSPACE_BASELINE', 'N/A')}")
 lines.append(f"- requirement_questions: {req.get('question_count', 0)}")
 lines.append(f"- requirement_completeness: {req.get('completeness_score', 'N/A')}/100")
@@ -711,6 +759,7 @@ with open(os.environ["REPORT_PATH"], "w", encoding="utf-8") as f:
 PY
 
 echo "fullflow complete"
+echo "workspace_root: $WORKSPACE_ROOT"
 echo "output: $OUT_DIR"
 echo "style_scope_lock: $STYLE_SCOPE_LOCK_PATH"
 if [[ "$ICON_ENABLED" == "1" ]]; then
