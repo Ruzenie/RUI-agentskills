@@ -93,8 +93,8 @@ const buttonStyles = {
 - [ ] 响应式测试
 
 #### 关联引用
-- 画布: [canvas/components/button.md](canvas/components/button.md)
-- 设计系统: [docs/design-system.md#button](docs/design-system.md#button)
+- 画布: `canvas/components/button.md`
+- 设计系统: `docs/design-system.md#button`
 <!-- @ui-modify:{id}:end -->
 ```
 

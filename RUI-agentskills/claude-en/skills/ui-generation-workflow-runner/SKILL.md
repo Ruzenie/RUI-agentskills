@@ -9,8 +9,8 @@ Goal: turn `ui-generation-workflow.md` from static documentation into an executa
 
 ## SSOT
 
-- `../../ui-generation-workflow.md`
-- `../../ui-codegen-skill.md` (phase-definition supplement)
+- `../references/ui-generation-workflow.md`
+- `../references/ui-codegen-skill.md` (phase-definition supplement)
 - Frontend development specification document (lifecycle-constraint supplement, Chinese source file in repo)
 - `../contracts/quality-gates.md`
 

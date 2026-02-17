@@ -24,6 +24,11 @@
 2. 样式任务先锁边界：`style-scope-guard`
 3. 最终收敛交付：`ui-codegen-master`
 
+## 快捷点名（Codex）
+
+- `$ui`：全流程快捷别名，等价于 `$ui-fullflow-orchestrator`。
+- 前端/UI任务未显式点名技能时，默认路由到 `$ui`。
+
 ---
 
 ## 技能地图

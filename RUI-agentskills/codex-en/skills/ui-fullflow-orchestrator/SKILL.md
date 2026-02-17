@@ -16,7 +16,7 @@ Goal: upgrade 17 existing skills from "collaborative" to "serially executable".
 - `../ui-codegen-master/SKILL.md`
 - `../style-scope-guard/SKILL.md`
 - `../svg-canvas-icon-engine/SKILL.md`
-- `../../AI_UI_Skill_Design_Document.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 - Frontend development specification document (Chinese source file in repo)
 
 ## One-Click Pipeline Script

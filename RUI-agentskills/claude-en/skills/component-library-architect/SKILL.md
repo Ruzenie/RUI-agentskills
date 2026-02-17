@@ -9,7 +9,7 @@ Goal: build a scalable, reusable, and releasable component-library system.
 
 ## SSOT
 
-- `../../component-library-guide.md`
+- `../references/component-library-guide.md`
 
 ## Core Tasks
 

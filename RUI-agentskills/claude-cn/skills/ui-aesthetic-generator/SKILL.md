@@ -9,7 +9,7 @@ description: 将 ui-aesthetic-skill.md 的审美标准、风格预设与验收�
 
 ## SSOT
 
-- `../../ui-aesthetic-skill.md`
+- `../references/ui-aesthetic-skill.md`
 
 ## 核心能力
 

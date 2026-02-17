@@ -15,23 +15,37 @@ def fail(msg: str) -> None:
 def main() -> int:
     root = Path(__file__).resolve().parents[3]
     skills_dir = root / "skills"
+    bundle_name = root.name.lower()
+    locale = "CN" if bundle_name.endswith("-cn") else "EN" if bundle_name.endswith("-en") else ""
 
     required_files = [
-        skills_dir / "variants" / "CN" / "SKILLS.md",
-        skills_dir / "variants" / "EN" / "SKILLS.md",
         skills_dir / "variants" / "manifest.json",
         skills_dir / "variants" / "skills.bilingual.json",
         skills_dir / "skill-structure-governor" / "scripts" / "export_skill_bundles.py",
         skills_dir / "platforms" / "codex" / "AGENTS.template.md",
-        skills_dir / "platforms" / "codex" / "AGENTS.template.en.md",
         skills_dir / "platforms" / "claude" / "CLAUDE.template.md",
-        skills_dir / "platforms" / "claude" / "CLAUDE.template.en.md",
-        skills_dir / "structure" / "skills-structure-notes.md",
     ]
+    if locale:
+        required_files.append(skills_dir / "variants" / locale / "SKILLS.md")
+    else:
+        required_files.extend(
+            [
+                skills_dir / "variants" / "CN" / "SKILLS.md",
+                skills_dir / "variants" / "EN" / "SKILLS.md",
+            ]
+        )
 
     missing = [p for p in required_files if not p.exists()]
     for p in missing:
         fail(f"missing required file: {p.relative_to(root)}")
+
+    structure_notes_candidates = [
+        skills_dir / "structure" / "skills-structure-notes.md",
+        skills_dir / "structure" / "skills-structure-notes.en.md",
+    ]
+    if not any(p.exists() for p in structure_notes_candidates):
+        fail("missing required file: skills/structure/skills-structure-notes.md")
+        missing.append(structure_notes_candidates[0])
 
     skill_dirs = []
     for child in skills_dir.iterdir():

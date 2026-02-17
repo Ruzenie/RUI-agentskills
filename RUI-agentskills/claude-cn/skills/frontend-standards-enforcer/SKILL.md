@@ -9,8 +9,8 @@ description: 基于 frontend-code-standards.md 做前端代码规范检查与修
 
 ## SSOT
 
-- `../../frontend-code-standards.md`
-- `../../AI前端开发技能规范.md`
+- `../references/frontend-code-standards.md`
+- `../references/AI前端开发技能规范.md`
 - `../contracts/quality-gates.md`
 
 ## 检查范围

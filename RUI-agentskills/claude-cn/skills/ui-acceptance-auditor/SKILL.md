@@ -9,9 +9,9 @@ description: 将 ui-acceptance-criteria.md 落地为三级验收流程和评分�
 
 ## SSOT
 
-- `../../ui-acceptance-criteria.md`
-- `../../AI_UI_Skill_Design_Document.md`
-- `../../AI前端开发技能规范.md`
+- `../references/ui-acceptance-criteria.md`
+- `../references/AI_UI_Skill_Design_Document.md`
+- `../references/AI前端开发技能规范.md`
 - `../contracts/quality-gates.md`
 
 ## 三级验收

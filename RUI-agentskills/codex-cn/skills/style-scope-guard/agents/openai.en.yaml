@@ -1,7 +1,0 @@
-interface:
-  display_name: "Style Scope Guard"
-  short_description: "Locks style-edit scope before changes and blocks out-of-scope edits."
-  default_prompt: "Use $style-scope-guard to lock style-change scope before implementation, and refuse out-of-scope edits."
-
-policy:
-  allow_implicit_invocation: true

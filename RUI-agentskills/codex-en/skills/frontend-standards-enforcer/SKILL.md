@@ -9,7 +9,7 @@ Goal: turn standards from recommendations into enforceable gates.
 
 ## SSOT
 
-- `../../frontend-code-standards.md`
+- `../references/frontend-code-standards.md`
 - Frontend development specification document (Chinese source file in repo)
 - `../contracts/quality-gates.md`
 

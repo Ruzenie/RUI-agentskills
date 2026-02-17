@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Generation Workflow Runner"
-  short_description: "Executes implementation via a four-step generation workflow."
-  default_prompt: "Use $ui-generation-workflow-runner to execute structured UI generation workflow and quality gates."
-
-policy:
-  allow_implicit_invocation: true

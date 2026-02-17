@@ -20,11 +20,11 @@ description: 系统化完成 UI 组件库选型、评估和对比。优先复用
 2. 推荐逻辑参考：`app/src/components/RecommendationPanel.tsx`
 3. 评估逻辑参考：`app/src/components/EvaluationPanel.tsx`
 4. 流程与模板补充：
-- `../../ui-selector-skill.md`
-- `../../ui-evaluation-flow.md`
-- `../../ui-selector-cheatsheet.md`
-- `../../ui-selector-prompts.md`
-- `../../UI-Design-AI-Skill.md`
+- `../references/ui-selector-skill.md`
+- `../references/ui-evaluation-flow.md`
+- `../references/ui-selector-cheatsheet.md`
+- `../references/ui-selector-prompts.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 
 ## 工作流
 

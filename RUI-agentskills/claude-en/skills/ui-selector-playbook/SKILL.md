@@ -9,11 +9,11 @@ Goal: provide discussable and auditable selection workflows and templates, cover
 
 ## SSOT
 
-- `../../ui-selector-skill.md`
-- `../../ui-evaluation-flow.md`
-- `../../ui-selector-cheatsheet.md`
-- `../../ui-selector-prompts.md`
-- `../../UI-Design-AI-Skill.md`
+- `../references/ui-selector-skill.md`
+- `../references/ui-evaluation-flow.md`
+- `../references/ui-selector-cheatsheet.md`
+- `../references/ui-selector-prompts.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 
 ## Applicable Scenarios
 

@@ -1,7 +1,0 @@
-interface:
-  display_name: "Frontend Standards Enforcer"
-  short_description: "Enforces frontend standards across structure, typing, performance, and quality."
-  default_prompt: "Use $frontend-standards-enforcer to enforce project frontend coding standards."
-
-policy:
-  allow_implicit_invocation: true

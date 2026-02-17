@@ -9,8 +9,8 @@ description: 将 component-extraction-rules.md 转为可执行重构规则，负
 
 ## SSOT
 
-- `../../component-extraction-rules.md`
-- `../../frontend-code-standards.md`（命名和目录规范）
+- `../references/component-extraction-rules.md`
+- `../references/frontend-code-standards.md`（命名和目录规范）
 
 ## 触发阈值
 

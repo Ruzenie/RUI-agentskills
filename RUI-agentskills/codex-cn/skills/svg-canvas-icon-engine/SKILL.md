@@ -9,9 +9,9 @@ description: 将 Kimi 的 SVG/Canvas 图标能力转为可执行技能，生成�
 
 ## SSOT
 
-- `../../Kimi_Agent_UI组件库AI技能/svg-canvas-icon-skill.md`
-- `../../Kimi_Agent_UI组件库AI技能/svg-canvas-cheatsheet.md`
-- `../../Kimi_Agent_UI组件库AI技能/icon-library.html`
+- `../references/svg-canvas-icon-skill.md`
+- `../references/svg-canvas-cheatsheet.md`
+- `../references/icon-library.html`
 - `../contracts/fullflow-handoff.md`
 - `../contracts/quality-gates.md`
 

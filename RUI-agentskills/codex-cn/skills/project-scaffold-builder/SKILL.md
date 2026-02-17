@@ -9,7 +9,7 @@ description: 将 project-scaffold.md 变成项目初始化与配置落地流程�
 
 ## SSOT
 
-- `../../project-scaffold.md`
+- `../references/project-scaffold.md`
 
 ## 能力范围
 

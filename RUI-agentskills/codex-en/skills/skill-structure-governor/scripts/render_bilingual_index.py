@@ -13,18 +13,18 @@ def render_cn(skills: list[dict]) -> str:
     for item in skills:
         grouped.setdefault(item["category_zh"], []).append(item)
 
-    lines = ["# Skills enen enen ", "", "enenenenenenenenenengenerate ", ""]
+    lines = ["# Skills 索引（中文）", "", "本文件由双语清单自动生成。", ""]
     idx = 1
     for category, items in grouped.items():
         lines.append(f"## {category}")
         lines.append("")
         for it in items:
             lines.append(f"{idx}. `{it['id']}`")
-            lines.append(f"- {it['title_zh']} {it['desc_zh']}")
+            lines.append(f"- {it['title_zh']}：{it['desc_zh']}")
             idx += 1
         lines.append("")
-    lines.append("validateenen `python3 skills/skill-structure-governor/scripts/validate_structure.py`")
-    lines.append("exportenen `python3 skills/skill-structure-governor/scripts/export_skill_bundles.py`")
+    lines.append("校验命令：`python3 skills/skill-structure-governor/scripts/validate_structure.py`")
+    lines.append("分发命令：`python3 skills/skill-structure-governor/scripts/export_skill_bundles.py`")
     lines.append("")
     return "\n".join(lines)
 

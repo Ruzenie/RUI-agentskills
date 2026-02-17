@@ -9,7 +9,7 @@ Goal: directly generate executable visual specifications from aesthetic standard
 
 ## SSOT
 
-- `../../ui-aesthetic-skill.md`
+- `../references/ui-aesthetic-skill.md`
 
 ## Core Capabilities
 

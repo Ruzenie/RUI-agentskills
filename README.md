@@ -1,209 +1,418 @@
-# RUI-agentskills
+<div align="center">
 
-**A production-oriented UI skills system for Codex / Claude.**
+# 🎨 RUI Agent Skills
 
-<p align="center">
-  <a href="./README_CN.md"><img src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge" alt="简体中文"></a>
-  <a href="./README.md"><img src="https://img.shields.io/badge/English-blue?style=for-the-badge" alt="English"></a>
+**Production-Ready UI Engineering Skills for AI Agents**
+
+> Usage note: RUI supports two integration modes.  
+> 1) `skills + AGENTS.md/CLAUDE.md` (for in-chat skill invocation);  
+> 2) `rui CLI` (for scripted execution, run inside a bundle directory, or set `SKILLS_DIR=<bundle>/skills` to run from anywhere).
+
+<p>
+  <a href="https://github.com/yourusername/RUI-agentskills"><img src="https://img.shields.io/badge/Release-v1.0.0-2563eb?style=flat-square&logo=github" alt="Release"></a>
+  <a href="./README_CN.md"><img src="https://img.shields.io/badge/中文文档-Available-16a34a?style=flat-square" alt="中文文档"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square" alt="License"></a>
 </p>
 
-![Bundles](https://img.shields.io/badge/bundles-4-2563eb)
-![Skills](https://img.shields.io/badge/skills-19-16a34a)
-![Platforms](https://img.shields.io/badge/platform-codex%20%7C%20claude-f59e0b)
+<p>
+  <img src="https://img.shields.io/badge/Bundles-4-2563eb?style=for-the-badge&logo=package" alt="Bundles">
+  <img src="https://img.shields.io/badge/Skills-19-16a34a?style=for-the-badge&logo=stackblitz" alt="Skills">
+  <img src="https://img.shields.io/badge/Platforms-Codex%20%7C%20Claude-f59e0b?style=for-the-badge&logo=openai" alt="Platforms">
+</p>
 
-## Project Overview
+<p><strong>🌍 <a href="./README_CN.md">简体中文</a> | English</strong></p>
 
-This repository provides a complete packaging and distribution setup for UI engineering skills,
-covering requirement clarification, style-scope control, implementation, standards enforcement,
-acceptance, and self-review.
-
-The objective is not suggestion-only assistance, but stable progression to **runnable implementation + verifiable delivery**.
-
-Highlights:
-
-1. 4 ready-to-use bundles (Codex / Claude × CN / EN)
-2. 19 collaborative skills with fullflow orchestration
-3. Style-scope lock to reduce accidental business-logic edits
-4. Support for global installation to `~/.codex/skills`
-
-## Why Use This Bundle Set
-
-| Scenario | Typical issue | How this skills set handles it |
-|---|---|---|
-| Incomplete requirements | Early coding causes rework | Run `requirements-elicitation-engine` before implementation |
-| Style-only changes | Accidental business-logic edits | Enforce `style-scope-guard` before coding |
-| Multi-skill collaboration | Context breaks and artifact drift | Use `ui-fullflow-orchestrator` with unified contracts |
-| Quality closure | Inconsistent standards and weak replayability | Acceptance + self-review + scorecard loop |
-
-## 30-Second Start
-
-1. Choose a bundle: `RUI-agentskills/codex-en` (or `codex-cn` / `claude-*`)
-2. Copy `skills/` to your target location (project-local or `~/.codex/skills`)
-3. Merge entry file: `AGENTS.md` or `CLAUDE.md`
-4. Invoke directly: `$ui-fullflow-orchestrator` / `$ui-codegen-master`
+</div>
 
 ---
 
-## Full Skill Catalog (19)
+## 📋 Table of Contents
 
-The top-level distribution includes all 19 skills below:
-
-### Core Orchestration
-
-1. `ui-fullflow-orchestrator` - Orchestrates the full UI pipeline from requirements to acceptance.
-2. `requirements-elicitation-engine` - Clarifies ambiguous requirements and generates PRD artifacts.
-3. `ui-codegen-master` - Consolidates selection, design, generation, refactoring, and quality closure.
-
-### Selection & Decision
-
-4. `ui-selector-pro` - Provides deterministic UI library recommendation, evaluation, and trade-off output.
-5. `ui-selector-playbook` - Supplies selection workflow, ADR patterns, and review strategies.
-
-### Aesthetic Strategy
-
-6. `ui-aesthetic-coach` - Delivers visual critique, style direction, and token-oriented guidance.
-7. `ui-aesthetic-generator` - Turns visual standards into generation-ready constraints and style rules.
-
-### Implementation
-
-8. `ui-generation-workflow-runner` - Executes implementation via a four-step generation workflow.
-9. `style-scope-guard` - Locks style-edit scope before changes and blocks out-of-scope edits.
-10. `svg-canvas-icon-engine` - Generates icon manifests, specs, and reusable SVG/Canvas assets.
-11. `ui-component-extractor` - Extracts reusable components based on refactor thresholds.
-12. `frontend-standards-enforcer` - Enforces frontend standards across structure, typing, performance, and quality.
-13. `ui-acceptance-auditor` - Runs multi-dimension acceptance checks and release recommendations.
-14. `ui-self-reviewer` - Performs pre-delivery self-review across code, visual, interaction, and aesthetics.
-
-### Architecture & Foundation
-
-15. `project-scaffold-builder` - Builds project scaffolding, tooling setup, and initial quality gates.
-16. `component-library-architect` - Designs component-library architecture, token system, and release process.
-17. `app-workspace-guide` - Detects workspace baseline, component assets, and directory constraints.
-18. `ui-agent-workspace` - Integrates workspace state, canvas design, and UI change logging into an executable workflow.
-
-### Structure Governance
-
-19. `skill-structure-governor` - Validates bilingual entries and multi-platform packaging structure consistency.
-
-For bilingual generated indexes, see:
-- `RUI-agentskills/codex-cn/skills/variants/CN/SKILLS.md`
-- `RUI-agentskills/codex-en/skills/variants/EN/SKILLS.md`
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [📦 Available Bundles](#-available-bundles)
+- [🔧 Skill Catalog](#-skill-catalog)
+- [💡 Usage Examples](#-usage-examples)
+- [📁 Project Structure](#-project-structure)
+- [🔌 Integration Guide](#-integration-guide)
+- [🛠️ Maintenance](#️-maintenance)
 
 ---
 
-## 1. Exported Bundles in This Folder
+## ✨ Features
 
-Four ready-to-use bundles are exported under `RUI-agentskills/`:
+<div align="center">
 
-1. `RUI-agentskills/codex-cn`
-2. `RUI-agentskills/codex-en`
-3. `RUI-agentskills/claude-cn`
-4. `RUI-agentskills/claude-en`
+| Feature | Description |
+|---------|-------------|
+| 🎯 **Zero-Config Setup** | 4 ready-to-use bundles for immediate deployment |
+| 🔗 **Full-Flow Orchestration** | 19 collaborative skills working in seamless pipeline |
+| 🔒 **Style Scope Guard** | Prevent accidental business logic changes during UI edits |
+| 🌐 **Bilingual Support** | Native Chinese and English workflows |
+| 📊 **Quality Gates** | Built-in acceptance criteria and self-review mechanisms |
+| 🎨 **Design Token System** | Standardized aesthetic guidelines and component architecture |
 
-Manifest:
+</div>
 
-- `RUI-agentskills/bundle.manifest.json`
+### Why RUI Agent Skills?
 
-## 2. What Each Bundle Contains
+<table>
+<tr>
+<th width="25%">Scenario</th>
+<th width="35%">Without RUI</th>
+<th width="40%">With RUI Skills</th>
+</tr>
+<tr>
+<td>📋 Vague Requirements</td>
+<td>Start coding → Rework → Missed deadlines</td>
+<td><code>requirements-elicitation-engine</code> → Clear PRD → Right first time</td>
+</tr>
+<tr>
+<td>🎨 Style Changes</td>
+<td>Edit CSS → Break logic → Debug hours</td>
+<td><code>style-scope-guard</code> → Locked boundaries → Safe changes</td>
+</tr>
+<tr>
+<td>🔄 Multi-Skill Tasks</td>
+<td>Context lost → Inconsistent artifacts</td>
+<td><code>ui-fullflow-orchestrator</code> → Unified pipeline → Consistent output</td>
+</tr>
+<tr>
+<td>✅ Quality Check</td>
+<td>Subjective review → Missed issues</td>
+<td><code>ui-acceptance-auditor</code> → Scorecard → Measurable quality</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: Project-Local Installation (Recommended)
+
+```bash
+# 1. Choose your bundle
+cd RUI-agentskills/codex-en   # or codex-cn / claude-en / claude-cn
+
+# 2. Copy skills to your project
+cp -R skills/ /path/to/your/project/
+
+# 3. Merge entry file into your project's rules
+cat AGENTS.md >> /path/to/your/project/AGENTS.md  # For Codex
+# OR
+cat CLAUDE.md >> /path/to/your/project/CLAUDE.md   # For Claude
+```
+
+### Option 2: Global Installation (Skills Only)
+
+```bash
+# Install to Codex global skills
+mkdir -p ~/.codex/skills
+cp -R RUI-agentskills/codex-en/skills/* ~/.codex/skills/
+
+# Then copy entry file to each project
+cp RUI-agentskills/codex-en/AGENTS.md /path/to/your/project/AGENTS.md
+```
+
+After installation, follow the steps below to start in chat with `$ui`.
+
+### After Installation: Start with `$ui` in chat (Recommended)
+
+`$ui` is an alias of `$ui-fullflow-orchestrator`, which triggers the full UI workflow (requirements → design → implementation → acceptance).
+
+```text
+1) Complete Option 1 or Option 2 first (skills loaded + AGENTS.md/CLAUDE.md merged).
+2) In your project chat, run:
+   $ui Build a SaaS analytics dashboard with responsive layout and chart modules
+3) For explicit invocation, use:
+   $ui-fullflow-orchestrator Build a SaaS analytics dashboard with responsive layout and chart modules
+```
+
+---
+
+## 📦 Available Bundles
+
+<div align="center">
+
+| Bundle | Platform | Language | Best For |
+|--------|----------|----------|----------|
+| `codex-en` | OpenAI Codex |  English | Codex users, English workflows |
+| `codex-cn` | OpenAI Codex |  Chinese | Codex users, Chinese workflows |
+| `claude-en` | Anthropic Claude | English | Claude users, English workflows |
+| `claude-cn` | Anthropic Claude |  Chinese | Claude users, Chinese workflows |
+
+</div>
+
+### Bundle Contents
 
 Each bundle includes:
 
-1. Platform entry file  
-- Codex bundles: `AGENTS.md`  
-- Claude bundles: `CLAUDE.md`
-
-2. Skill implementation directory  
-- `skills/` (19 skills)
-
-3. Variant/platform/contracts metadata  
-- `skills/variants/*`  
-- `skills/platforms/*`  
-- `skills/contracts/*`
-
-## 3. Which Bundle to Choose
-
-1. Using Codex: choose `codex-cn` or `codex-en`
-2. Using Claude: choose `claude-cn` or `claude-en`
-3. Chinese workflow: use `*-cn`
-4. English-only workflow: use `*-en`
-
-## 4. How To Integrate Into Your Project
-
-1. Merge the target bundle's entry file into your project-level rules file  
-- Codex: merge `AGENTS.md`  
-- Claude: merge `CLAUDE.md`
-
-2. Copy the bundle's `skills/` directory to your project root
-
-3. Call skills directly in prompt, for example:
-- `$ui-codegen-master`
-- `$ui-fullflow-orchestrator`
-- `$style-scope-guard`
-
-## 4.1 Install Into Global Codex Skills (Recommended)
-
-For cross-project usage, install skills into `~/.codex/skills`:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R /home/ruzenie/ai/ruiskills/RUI-agentskills/codex-en/skills/* ~/.codex/skills/
+```
+📦 {bundle}/
+├── 📄 AGENTS.md / CLAUDE.md     # Platform entry point
+├── 📂 skills/
+│   ├── 🔧 19 Skill implementations
+│   ├── 📋 contracts/            # Inter-skill agreements
+│   ├── 🎨 references/           # Design systems & standards
+│   ├── 🌍 variants/EN|CN/       # Language indexes
+│   └── 📜 platforms/            # Platform-specific templates
+└── 📊 manifest.json             # Bundle metadata
 ```
 
-Then place the entry rules file into your target project:
+---
 
-```bash
-cp /home/ruzenie/ai/ruiskills/RUI-agentskills/codex-en/AGENTS.md <your-project-path>/AGENTS.md
-```
+## 🔧 Skill Catalog
 
-For Chinese installation, replace `codex-en` with `codex-cn`.
+### 🎯 Core Orchestration Layer
 
-## 5. Common Skill Commands
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`ui-fullflow-orchestrator`** | Master orchestrator for the complete UI pipeline | End-to-end workflow from requirements to delivery |
+| **`requirements-elicitation-engine`** | Structured requirement clarification | Converts vague ideas into actionable PRDs |
+| **`ui-codegen-master`** | Unified implementation controller | Consolidates selection, design, generation, and quality |
 
-1. Fullflow orchestration
+### 🎨 Aesthetic & Design Layer
 
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`ui-aesthetic-coach`** | Visual design advisor | Critique, direction, and token generation |
+| **`ui-aesthetic-generator`** | Design system generator | Converts standards into implementation constraints |
+| **`svg-canvas-icon-engine`** | Icon system builder | Generates manifests, specs, and reusable assets |
+
+### 🔨 Implementation Layer
+
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`ui-generation-workflow-runner`** | Code generation executor | Four-step implementation workflow |
+| **`style-scope-guard`** | Change boundary protector | Prevents out-of-scope modifications |
+| **`ui-component-extractor`** | Component architect | Automated extraction and refactoring |
+| **`frontend-standards-enforcer`** | Quality gatekeeper | Structure, types, performance enforcement |
+
+### ✅ Quality Assurance Layer
+
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`ui-acceptance-auditor`** | Multi-dimension reviewer | Acceptance criteria verification |
+| **`ui-self-reviewer`** | Pre-delivery checker | Code, visual, interaction, aesthetic review |
+
+### 🏗️ Architecture & Foundation Layer
+
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`project-scaffold-builder`** | Project initializer | Scaffolding, tooling, quality gates |
+| **`component-library-architect`** | Design system creator | Token systems, component architecture |
+| **`app-workspace-guide`** | Workspace analyzer | Baseline detection, asset inventory |
+| **`ui-agent-workspace`** | Collaborative environment | Workspace state, canvas, change logging |
+
+### 📚 Decision Support Layer
+
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`ui-selector-pro`** | Library recommender | Deterministic UI library selection |
+| **`ui-selector-playbook`** | Selection guide | ADR patterns, review strategies |
+
+### 🔧 Governance Layer
+
+| Skill | Description | Key Capability |
+|-------|-------------|----------------|
+| **`skill-structure-governor`** | Structure validator | Bilingual/multi-platform consistency |
+
+---
+
+## 💡 Usage Examples
+
+### 🎬 Full-Flow Pipeline
+
+The examples below run directly via the fullflow pipeline script.
+
+**Full Command (Advanced):**
 ```bash
 bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh \
-  --brief "SaaS dashboard with strong readability and CTA" \
-  --style-target "dashboard header and core cards" \
-  --scope-file "src/pages/dashboard.css" \
+  --brief "SaaS analytics dashboard" \
+  --style-target "dashboard header, metric cards, charts" \
   --framework react \
   --project-type saas-modern \
   --priority performance \
-  --priority accessibility
+  --priority accessibility \
+  --density comfortable
 ```
 
-2. Style-scope lock (recommended before style edits)
+**Output:**
+- `flow.input.json` - Pipeline configuration
+- `requirements.summary.json` - Clarified requirements
+- `style-profile.yaml` - Design tokens
+- `selector.recommend.json` - Library recommendations
+- `tokens.json/css` - Implementation-ready tokens
+- `fullflow.report.md` - Complete execution report
+
+### 🔒 Style Scope Lock
+
+Lock modification boundaries before making style changes:
 
 ```bash
 python3 skills/style-scope-guard/scripts/build_style_scope_lock.py \
-  --brief "Only update hero section glass style" \
-  --target "Hero section" \
+  --brief "Update hero section with glassmorphism effect" \
+  --target "Hero section only" \
   --allowed-file "src/styles/hero.css" \
-  --json-out /tmp/style.scope.lock.json \
-  --md-out /tmp/style.scope.checklist.md
+  --allowed-file "src/components/Hero.tsx" \
+  --json-out ./style.scope.lock.json \
+  --md-out ./style.scope.checklist.md
 ```
 
-3. Requirements elicitation
+**Prevents:** Accidental changes to business logic, API calls, routing
+
+### 📋 Requirements Elicitation
+
+Transform vague requirements into actionable specifications:
 
 ```bash
 python3 skills/requirements-elicitation-engine/scripts/generate_requirements_brief.py \
-  --brief "Build a SaaS analytics dashboard" \
-  --out-dir /tmp/req-artifacts \
+  --brief "Build an e-commerce product page" \
+  --out-dir ./requirements \
   --json
 ```
 
-## 6. Maintain and Re-Export
+**Output:**
+- `requirements.summary.json` - Structured requirements
+- `requirements.prd.md` - Product requirements document
+- `requirements.questions.md` - Clarification Q&A
 
-Re-export all bundles from this repository:
+### 🎨 Design Token Generation
+
+Generate consistent design tokens from aesthetic direction:
 
 ```bash
+python3 skills/ui-aesthetic-coach/scripts/generate_design_tokens.py \
+  --direction "Data Clarity" \
+  --density comfortable \
+  --brand-color "#3b82f6" \
+  --format both \
+  --json-out ./tokens.json \
+  --css-out ./tokens.css
+```
+
+---
+
+## 📁 Project Structure
+
+```
+RUI-agentskills/
+├── 📦 Bundle Distributions
+│   ├── codex-cn/              # Codex Chinese bundle
+│   │   ├── AGENTS.md
+│   │   └── skills/
+│   ├── codex-en/              # Codex English bundle
+│   │   ├── AGENTS.md
+│   │   └── skills/
+│   ├── claude-cn/             # Claude Chinese bundle
+│   │   ├── CLAUDE.md
+│   │   └── skills/
+│   └── claude-en/             # Claude English bundle
+│       ├── CLAUDE.md
+│       └── skills/
+│
+├── 📂 Skill Implementations (per bundle)
+│   └── skills/
+│       ├── ui-fullflow-orchestrator/
+│       │   ├── SKILL.md
+│       │   ├── scripts/
+│       │   └── references/
+│       ├── ui-codegen-master/
+│       ├── style-scope-guard/
+│       ├── ... (16 more skills)
+│       │
+│       ├── 📋 contracts/         # Inter-skill agreements
+│       │   ├── fullflow-handoff.md
+│       │   ├── quality-gates.md
+│       │   └── reasoning-visibility.md
+│       │
+│       ├── 📚 references/        # Design standards
+│       │   ├── AI_UI_Skill_Design_Document.md
+│       │   ├── ui-aesthetic-skill.md
+│       │   ├── frontend-code-standards.md
+│       │   └── ...
+│       │
+│       └── 🌍 variants/          # Language indexes
+│           ├── CN/SKILLS.md
+│           └── EN/SKILLS.md
+│
+├── 📄 Documentation
+│   ├── README.md
+│   ├── README_CN.md
+│   └── bundle.manifest.json
+│
+└── 🔧 This README
+```
+
+---
+
+## 🔌 Integration Guide
+
+### For Codex Users
+
+1. **Copy skills**
+   ```bash
+   cp -R RUI-agentskills/codex-en/skills/* ~/.codex/skills/
+   ```
+
+2. **Add to project**
+   ```bash
+   cp RUI-agentskills/codex-en/AGENTS.md /your/project/AGENTS.md
+   ```
+
+3. **Use in prompts**
+   ```
+   I need to build a landing page. Let's start with $ui-fullflow-orchestrator.
+   ```
+
+### For Claude Users
+
+1. **Copy skills**
+   ```bash
+   cp -R RUI-agentskills/claude-en/skills/* /your/project/skills/
+   ```
+
+2. **Merge entry file**
+   ```bash
+   cat RUI-agentskills/claude-en/CLAUDE.md >> /your/project/CLAUDE.md
+   ```
+
+3. **Use in conversation**
+   ```
+   Please use $ui-aesthetic-coach to review my current design direction.
+   ```
+
+---
+
+## 🛠️ Maintenance
+
+### Export/Update Bundles
+
+```bash
+# Re-export all bundles with latest changes
 python3 skills/skill-structure-governor/scripts/export_skill_bundles.py \
   --out-dir RUI-agentskills \
   --clean
 ```
 
-Validate structure:
+### Validate Structure
 
 ```bash
+# Check bilingual/multi-platform consistency
 python3 skills/skill-structure-governor/scripts/validate_structure.py
 ```
+
+### Render Bilingual Index
+
+```bash
+# Generate language-specific skill indexes
+python3 skills/skill-structure-governor/scripts/render_bilingual_index.py
+```
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#-rui-agent-skills)**
+
+</div>

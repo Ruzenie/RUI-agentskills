@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Aesthetic Coach"
-  short_description: "Delivers visual critique, style direction, and token-oriented guidance."
-  default_prompt: "Use $ui-aesthetic-coach to critique and upgrade my UI style with actionable design tokens and layout rules."
-
-policy:
-  allow_implicit_invocation: true

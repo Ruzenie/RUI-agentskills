@@ -9,8 +9,8 @@ Goal: systematically split bloated pages/components to improve reuse and maintai
 
 ## SSOT
 
-- `../../component-extraction-rules.md`
-- `../../frontend-code-standards.md` (naming and directory standards)
+- `../references/component-extraction-rules.md`
+- `../references/frontend-code-standards.md` (naming and directory standards)
 
 ## Trigger Thresholds
 

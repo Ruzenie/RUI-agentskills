@@ -9,8 +9,7 @@ description: 基于结构化反问机制补全模糊需求，生成PRD草案、�
 
 ## SSOT
 
-- `../../Kimi_Agent_UI组件库AI技能/requirement-elicitation-skill.md`
-- `../../Kimi_Agent_UI组件库AI技能/README.md`
+- `../references/requirement-elicitation-skill.md`
 - `../contracts/quality-gates.md`
 
 ## 何时使用

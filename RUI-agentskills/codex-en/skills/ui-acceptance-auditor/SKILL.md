@@ -9,8 +9,8 @@ Goal: turn subjective "looks fine" into measurable acceptance.
 
 ## SSOT
 
-- `../../ui-acceptance-criteria.md`
-- `../../AI_UI_Skill_Design_Document.md`
+- `../references/ui-acceptance-criteria.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 - Frontend development specification document (Chinese source file in repo)
 - `../contracts/quality-gates.md`
 

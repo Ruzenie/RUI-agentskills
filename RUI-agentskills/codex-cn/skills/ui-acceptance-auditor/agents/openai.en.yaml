@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Acceptance Auditor"
-  short_description: "Runs multi-dimension acceptance checks and release recommendations."
-  default_prompt: "Use $ui-acceptance-auditor to run level-0/1/2 acceptance checks on this UI delivery."
-
-policy:
-  allow_implicit_invocation: true

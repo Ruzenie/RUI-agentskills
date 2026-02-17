@@ -51,25 +51,25 @@ bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh \
 
 ## 知识来源（按需读取）
 
-- 元规范：`../../AI_UI_Skill_Design_Document.md`
-- 元规范：`../../AI前端开发技能规范.md`
-- 主流程：`../../ui-codegen-skill.md`
-- 生成流程：`../../ui-generation-workflow.md`
-- 抽离规则：`../../component-extraction-rules.md`
-- 代码规范：`../../frontend-code-standards.md`
-- 组件库设计：`../../component-library-guide.md`
-- 脚手架模板：`../../project-scaffold.md`
-- 验收标准：`../../ui-acceptance-criteria.md`
-- 自评机制：`../../ui-self-evaluation.md`
-- 审美规范：`../../ui-aesthetic-skill.md`
+- 元规范：`../references/AI_UI_Skill_Design_Document.md`
+- 元规范：`../references/AI前端开发技能规范.md`
+- 主流程：`../references/ui-codegen-skill.md`
+- 生成流程：`../references/ui-generation-workflow.md`
+- 抽离规则：`../references/component-extraction-rules.md`
+- 代码规范：`../references/frontend-code-standards.md`
+- 组件库设计：`../references/component-library-guide.md`
+- 脚手架模板：`../references/project-scaffold.md`
+- 验收标准：`../references/ui-acceptance-criteria.md`
+- 自评机制：`../references/ui-self-evaluation.md`
+- 审美规范：`../references/ui-aesthetic-skill.md`
 - 全流程契约：`../contracts/fullflow-handoff.md`
 - 质量门禁：`../contracts/quality-gates.md`
 - 思维可见化：`../contracts/reasoning-visibility.md`
 
 `app/` 参考实现（用于落地和复用判断）：
-- `../../app/src/App.tsx`
-- `../../app/src/components/*.tsx`
-- `../../app/src/data/uiLibraries.ts`
+- `../references/app/src/App.tsx`
+- `../references/app/src/components/README.md`
+- `../references/app/src/data/uiLibraries.ts`
 
 ## 执行工作流
 

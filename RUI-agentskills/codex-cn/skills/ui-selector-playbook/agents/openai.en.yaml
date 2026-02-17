@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Selector Playbook"
-  short_description: "Supplies selection workflow, ADR patterns, and review strategies."
-  default_prompt: "Use $ui-selector-playbook to run evaluation flow and generate decision records."
-
-policy:
-  allow_implicit_invocation: true

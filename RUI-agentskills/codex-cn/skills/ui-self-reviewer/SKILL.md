@@ -9,9 +9,9 @@ description: 将 ui-self-evaluation.md 转为自审流程（代码/视觉/交互
 
 ## SSOT
 
-- `../../ui-self-evaluation.md`
-- `../../AI_UI_Skill_Design_Document.md`
-- `../../AI前端开发技能规范.md`
+- `../references/ui-self-evaluation.md`
+- `../references/AI_UI_Skill_Design_Document.md`
+- `../references/AI前端开发技能规范.md`
 - `../contracts/quality-gates.md`
 
 ## 自审步骤

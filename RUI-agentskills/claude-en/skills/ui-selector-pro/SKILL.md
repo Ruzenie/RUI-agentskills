@@ -20,11 +20,11 @@ Goal: combine repository methodology docs with real data in `app/src/data/uiLibr
 2. Recommendation logic reference: `app/src/components/RecommendationPanel.tsx`
 3. Evaluation logic reference: `app/src/components/EvaluationPanel.tsx`
 4. Workflow/template supplements:
-- `../../ui-selector-skill.md`
-- `../../ui-evaluation-flow.md`
-- `../../ui-selector-cheatsheet.md`
-- `../../ui-selector-prompts.md`
-- `../../UI-Design-AI-Skill.md`
+- `../references/ui-selector-skill.md`
+- `../references/ui-evaluation-flow.md`
+- `../references/ui-selector-cheatsheet.md`
+- `../references/ui-selector-prompts.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 
 ## Workflow
 

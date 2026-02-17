@@ -24,6 +24,11 @@ This set links requirement clarification, style scope control, implementation, a
 2. For style tasks, lock scope first: `style-scope-guard`
 3. Converge final delivery: `ui-codegen-master`
 
+## Quick Invocation (Codex)
+
+- `$ui`: fullflow alias, equivalent to `$ui-fullflow-orchestrator`.
+- If a frontend/UI task does not explicitly name a skill, route to `$ui` by default.
+
 ---
 
 ## Skills Map

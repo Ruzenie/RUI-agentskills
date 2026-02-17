@@ -9,8 +9,8 @@ Goal: build an accurate understanding of the current `app/` workspace before UI 
 
 ## SSOT
 
-- `../../app/README.md`
-- `../../app/info.md`
+- `../references/app-workspace-context.md`
+- `../references/app-workspace-context.md`
 
 ## Capability Scope
 

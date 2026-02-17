@@ -22,3 +22,15 @@ Template entry for Codex packaging with a shared implementation and bilingual do
 ```bash
 python3 skills/skill-structure-governor/scripts/validate_structure.py
 ```
+
+## Quick Invocation and Frontend Routing
+
+- Alias mapping: `$ui` is equivalent to `$ui-fullflow-orchestrator`.
+- Explicit invocation first: if a user explicitly names any skill, follow it first.
+- Default frontend routing: if no skill is explicitly named and the task is frontend/UI-related, route to `$ui` fullflow by default.
+- Frontend task scope (examples): page implementation, component implementation, style/visual polish, interaction refactor, frontend refactor, accessibility and performance optimization.
+- Non-frontend tasks: follow normal skill matching, do not force `$ui`.
+
+Recommended invocation examples:
+- `Use $ui to build an e-commerce analytics dashboard`
+- `Polish this React page UI` (defaults to `$ui` when no explicit skill is named)

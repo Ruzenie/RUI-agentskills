@@ -16,8 +16,8 @@ description: 打通 UI 全流程的总编排技能。将选型、审美、令牌
 - `../ui-codegen-master/SKILL.md`
 - `../style-scope-guard/SKILL.md`
 - `../svg-canvas-icon-engine/SKILL.md`
-- `../../AI_UI_Skill_Design_Document.md`
-- `../../AI前端开发技能规范.md`
+- `../references/AI_UI_Skill_Design_Document.md`
+- `../references/AI前端开发技能规范.md`
 
 ## 一键流水线脚本
 

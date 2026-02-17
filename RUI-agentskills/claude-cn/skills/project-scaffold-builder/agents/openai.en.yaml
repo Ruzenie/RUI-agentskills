@@ -1,7 +1,0 @@
-interface:
-  display_name: "Project Scaffold Builder"
-  short_description: "Builds project scaffolding, tooling setup, and initial quality gates."
-  default_prompt: "Use $project-scaffold-builder to initialize a production-grade frontend scaffold."
-
-policy:
-  allow_implicit_invocation: true

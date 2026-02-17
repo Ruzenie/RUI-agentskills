@@ -9,11 +9,11 @@ description: 将 UI 选型相关方法文档（流程、速查表、提示词、
 
 ## SSOT
 
-- `../../ui-selector-skill.md`
-- `../../ui-evaluation-flow.md`
-- `../../ui-selector-cheatsheet.md`
-- `../../ui-selector-prompts.md`
-- `../../UI-Design-AI-Skill.md`
+- `../references/ui-selector-skill.md`
+- `../references/ui-evaluation-flow.md`
+- `../references/ui-selector-cheatsheet.md`
+- `../references/ui-selector-prompts.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 
 ## 适用场景
 

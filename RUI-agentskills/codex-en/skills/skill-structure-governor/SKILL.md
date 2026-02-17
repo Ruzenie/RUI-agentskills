@@ -9,7 +9,7 @@ Goal: govern this repository's skill structure and keep bilingual entries plus m
 
 ## SSOT
 
-- `../structure/skills-structure-notes.en.md`
+- `../structure/skills-structure-notes.md`
 - `../variants/manifest.json`
 - `../variants/skills.bilingual.json`
 

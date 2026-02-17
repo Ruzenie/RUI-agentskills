@@ -9,8 +9,8 @@ Goal: run structured self-checks before delivery and discover issues proactively
 
 ## SSOT
 
-- `../../ui-self-evaluation.md`
-- `../../AI_UI_Skill_Design_Document.md`
+- `../references/ui-self-evaluation.md`
+- `../references/AI_UI_Skill_Design_Document.md`
 - Frontend development specification document (Chinese source file in repo)
 - `../contracts/quality-gates.md`
 

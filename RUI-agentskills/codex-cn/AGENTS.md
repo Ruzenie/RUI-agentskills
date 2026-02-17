@@ -23,6 +23,18 @@
 python3 skills/skill-structure-governor/scripts/validate_structure.py
 ```
 
+## 快捷点名与前端路由
+
+- 别名映射：`$ui` 等价于 `$ui-fullflow-orchestrator`。
+- 点名优先：用户显式点名任意技能时，优先按用户指定执行。
+- 前端默认路由：未点名技能但属于前端/UI任务时，默认走 `$ui` 全流程。
+- 前端任务范围（示例）：页面开发、组件开发、样式/视觉优化、交互改造、前端重构、可访问性与性能优化。
+- 非前端任务：按常规技能匹配，不强制走 `$ui`。
+
+推荐触发示例：
+- `请用 $ui 生成一个电商分析仪表盘`
+- `优化这个 React 页面样式`（未点名时默认路由到 `$ui`）
+
 <!-- bundle_platform: codex -->
 <!-- bundle_locale: CN -->
 <!-- bundle_language: zh-CN -->

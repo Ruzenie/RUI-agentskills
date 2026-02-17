@@ -1,7 +1,0 @@
-interface:
-  display_name: "App Workspace Guide"
-  short_description: "Detects workspace baseline, component assets, and directory constraints."
-  default_prompt: "Use $app-workspace-guide to understand this app workspace baseline before making UI changes."
-
-policy:
-  allow_implicit_invocation: true

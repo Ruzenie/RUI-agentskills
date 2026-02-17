@@ -9,7 +9,7 @@ Goal: quickly build a consistent, maintainable, and releasable frontend project 
 
 ## SSOT
 
-- `../../project-scaffold.md`
+- `../references/project-scaffold.md`
 
 ## Capability Scope
 

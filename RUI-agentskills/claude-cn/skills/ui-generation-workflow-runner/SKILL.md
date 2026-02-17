@@ -9,9 +9,9 @@ description: 按四步生成法执行 UI 生成任务（结构规划→组件实
 
 ## SSOT
 
-- `../../ui-generation-workflow.md`
-- `../../ui-codegen-skill.md`（阶段定义补充）
-- `../../AI前端开发技能规范.md`（生命周期约束补充）
+- `../references/ui-generation-workflow.md`
+- `../references/ui-codegen-skill.md`（阶段定义补充）
+- `../references/AI前端开发技能规范.md`（生命周期约束补充）
 - `../contracts/quality-gates.md`
 
 ## 适用场景

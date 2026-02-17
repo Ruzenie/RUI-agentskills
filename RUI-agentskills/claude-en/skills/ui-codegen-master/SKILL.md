@@ -51,25 +51,25 @@ This command generates selection/aesthetic/token/report artifacts automatically.
 
 ## Knowledge Sources (Read On Demand)
 
-- Meta standard: `../../AI_UI_Skill_Design_Document.md`
+- Meta standard: `../references/AI_UI_Skill_Design_Document.md`
 - Meta standard: frontend development specification document (Chinese source file in repo)
-- Main workflow: `../../ui-codegen-skill.md`
-- Generation workflow: `../../ui-generation-workflow.md`
-- Extraction rules: `../../component-extraction-rules.md`
-- Code standards: `../../frontend-code-standards.md`
-- Component-library guide: `../../component-library-guide.md`
-- Scaffold template: `../../project-scaffold.md`
-- Acceptance criteria: `../../ui-acceptance-criteria.md`
-- Self-evaluation mechanism: `../../ui-self-evaluation.md`
-- Aesthetic standards: `../../ui-aesthetic-skill.md`
+- Main workflow: `../references/ui-codegen-skill.md`
+- Generation workflow: `../references/ui-generation-workflow.md`
+- Extraction rules: `../references/component-extraction-rules.md`
+- Code standards: `../references/frontend-code-standards.md`
+- Component-library guide: `../references/component-library-guide.md`
+- Scaffold template: `../references/project-scaffold.md`
+- Acceptance criteria: `../references/ui-acceptance-criteria.md`
+- Self-evaluation mechanism: `../references/ui-self-evaluation.md`
+- Aesthetic standards: `../references/ui-aesthetic-skill.md`
 - Fullflow contract: `../contracts/fullflow-handoff.md`
 - Quality gates: `../contracts/quality-gates.md`
 - Reasoning visibility: `../contracts/reasoning-visibility.md`
 
 `app/` implementation references (for practical reuse decisions):
-- `../../app/src/App.tsx`
-- `../../app/src/components/*.tsx`
-- `../../app/src/data/uiLibraries.ts`
+- `../references/app/src/App.tsx`
+- `../references/app/src/components/README.md`
+- `../references/app/src/data/uiLibraries.ts`
 
 ## Execution Workflow
 

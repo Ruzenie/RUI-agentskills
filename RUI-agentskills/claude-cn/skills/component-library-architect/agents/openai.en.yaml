@@ -1,7 +1,0 @@
-interface:
-  display_name: "Component Library Architect"
-  short_description: "Designs component-library architecture, token system, and release process."
-  default_prompt: "Use $component-library-architect to design component architecture and token system."
-
-policy:
-  allow_implicit_invocation: true

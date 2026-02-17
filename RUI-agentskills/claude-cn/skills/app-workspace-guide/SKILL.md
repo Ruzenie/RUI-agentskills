@@ -9,8 +9,8 @@ description: 将 app/README.md 与 app/info.md 转为项目运行上下文技能
 
 ## SSOT
 
-- `../../app/README.md`
-- `../../app/info.md`
+- `../references/app-workspace-context.md`
+- `../references/app-workspace-context.md`
 
 ## 能力范围
 

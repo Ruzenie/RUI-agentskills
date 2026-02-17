@@ -1,7 +1,0 @@
-interface:
-  display_name: "UI Component Extractor"
-  short_description: "Extracts reusable components based on refactor thresholds."
-  default_prompt: "Use $ui-component-extractor to split oversized components and improve reuse."
-
-policy:
-  allow_implicit_invocation: true

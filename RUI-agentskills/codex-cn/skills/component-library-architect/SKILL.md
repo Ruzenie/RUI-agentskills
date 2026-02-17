@@ -9,7 +9,7 @@ description: 基于 component-library-guide.md 设计和演进组件库，覆盖
 
 ## SSOT
 
-- `../../component-library-guide.md`
+- `../references/component-library-guide.md`
 
 ## 核心任务
 
