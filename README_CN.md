@@ -89,7 +89,7 @@
 
 ```bash
 # 1. 选择适合你的分发包
-cd RUI-agentskills/codex-cn   # 或 codex-en / claude-cn / claude-en
+cd RUI-agentskills/RUI-codex-cn   # 或 RUI-codex-en / RUI-claude-cn / RUI-claude-en
 
 # 2. 复制技能到项目目录
 cp -R skills/ /path/to/your/project/
@@ -105,10 +105,10 @@ cat CLAUDE.md >> /path/to/your/project/CLAUDE.md   # Claude 用户
 ```bash
 # 安装到 Codex 全局技能目录
 mkdir -p ~/.codex/skills
-cp -R RUI-agentskills/codex-cn/skills/* ~/.codex/skills/
+cp -R RUI-agentskills/RUI-codex-cn/skills/* ~/.codex/skills/
 
 # 然后将入口文件复制到每个项目
-cp RUI-agentskills/codex-cn/AGENTS.md /path/to/your/project/AGENTS.md
+cp RUI-agentskills/RUI-codex-cn/AGENTS.md /path/to/your/project/AGENTS.md
 ```
 
 安装完成后，请按下方步骤在对话中使用 `$ui` 启动流程。
@@ -200,10 +200,10 @@ python3 skills/skill-structure-governor/scripts/render_bilingual_index.py
 
 | 分发包 | 平台 | 语言 | 适用场景 |
 |--------|----------|----------|----------|
-| `codex-cn` | OpenAI Codex |  中文 | Codex 用户，中文工作流 |
-| `codex-en` | OpenAI Codex | 英文 | Codex 用户，英文工作流 |
-| `claude-cn` | Anthropic Claude |  中文 | Claude 用户，中文工作流 |
-| `claude-en` | Anthropic Claude | 英文 | Claude 用户，英文工作流 |
+| `RUI-codex-cn` | OpenAI Codex |  中文 | Codex 用户，中文工作流 |
+| `RUI-codex-en` | OpenAI Codex | 英文 | Codex 用户，英文工作流 |
+| `RUI-claude-cn` | Anthropic Claude |  中文 | Claude 用户，中文工作流 |
+| `RUI-claude-en` | Anthropic Claude | 英文 | Claude 用户，英文工作流 |
 
 </div>
 
@@ -362,16 +362,16 @@ python3 skills/ui-aesthetic-coach/scripts/generate_design_tokens.py \
 ```
 RUI-agentskills/
 ├── 📦 分发包
-│   ├── codex-cn/              # Codex 中文包
+│   ├── RUI-codex-cn/              # Codex 中文包
 │   │   ├── AGENTS.md
 │   │   └── skills/
-│   ├── codex-en/              # Codex 英文包
+│   ├── RUI-codex-en/              # Codex 英文包
 │   │   ├── AGENTS.md
 │   │   └── skills/
-│   ├── claude-cn/             # Claude 中文包
+│   ├── RUI-claude-cn/             # Claude 中文包
 │   │   ├── CLAUDE.md
 │   │   └── skills/
-│   └── claude-en/             # Claude 英文包
+│   └── RUI-claude-en/             # Claude 英文包
 │       ├── CLAUDE.md
 │       └── skills/
 │
@@ -416,12 +416,12 @@ RUI-agentskills/
 
 1. **复制技能**
    ```bash
-   cp -R RUI-agentskills/codex-cn/skills/* ~/.codex/skills/
+   cp -R RUI-agentskills/RUI-codex-cn/skills/* ~/.codex/skills/
    ```
 
 2. **添加到项目**
    ```bash
-   cp RUI-agentskills/codex-cn/AGENTS.md /your/project/AGENTS.md
+   cp RUI-agentskills/RUI-codex-cn/AGENTS.md /your/project/AGENTS.md
    ```
 
 3. **对话中使用**
@@ -433,12 +433,12 @@ RUI-agentskills/
 
 1. **复制技能**
    ```bash
-   cp -R RUI-agentskills/claude-cn/skills/* /your/project/skills/
+   cp -R RUI-agentskills/RUI-claude-cn/skills/* /your/project/skills/
    ```
 
 2. **合并入口文件**
    ```bash
-   cat RUI-agentskills/claude-cn/CLAUDE.md >> /your/project/CLAUDE.md
+   cat RUI-agentskills/RUI-claude-cn/CLAUDE.md >> /your/project/CLAUDE.md
    ```
 
 3. **对话中使用**

@@ -4,29 +4,29 @@
   "skill_count": 19,
   "bundles": [
     {
-      "name": "codex-cn",
-      "path": "RUI-agentskills/codex-cn",
+      "name": "RUI-codex-cn",
+      "path": "RUI-agentskills/RUI-codex-cn",
       "platform": "codex",
       "locale": "CN",
       "entry": "AGENTS.md"
     },
     {
-      "name": "codex-en",
-      "path": "RUI-agentskills/codex-en",
+      "name": "RUI-codex-en",
+      "path": "RUI-agentskills/RUI-codex-en",
       "platform": "codex",
       "locale": "EN",
       "entry": "AGENTS.md"
     },
     {
-      "name": "claude-cn",
-      "path": "RUI-agentskills/claude-cn",
+      "name": "RUI-claude-cn",
+      "path": "RUI-agentskills/RUI-claude-cn",
       "platform": "claude",
       "locale": "CN",
       "entry": "CLAUDE.md"
     },
     {
-      "name": "claude-en",
-      "path": "RUI-agentskills/claude-en",
+      "name": "RUI-claude-en",
+      "path": "RUI-agentskills/RUI-claude-en",
       "platform": "claude",
       "locale": "EN",
       "entry": "CLAUDE.md"

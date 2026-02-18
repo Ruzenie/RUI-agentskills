@@ -90,7 +90,7 @@
 
 ```bash
 # 1. Choose your bundle
-cd RUI-agentskills/codex-en   # or codex-cn / claude-en / claude-cn
+cd RUI-agentskills/RUI-codex-en   # or RUI-codex-cn / RUI-claude-en / RUI-claude-cn
 
 # 2. Copy skills to your project
 cp -R skills/ /path/to/your/project/
@@ -106,10 +106,10 @@ cat CLAUDE.md >> /path/to/your/project/CLAUDE.md   # For Claude
 ```bash
 # Install to Codex global skills
 mkdir -p ~/.codex/skills
-cp -R RUI-agentskills/codex-en/skills/* ~/.codex/skills/
+cp -R RUI-agentskills/RUI-codex-en/skills/* ~/.codex/skills/
 
 # Then copy entry file to each project
-cp RUI-agentskills/codex-en/AGENTS.md /path/to/your/project/AGENTS.md
+cp RUI-agentskills/RUI-codex-en/AGENTS.md /path/to/your/project/AGENTS.md
 ```
 
 After installation, follow the steps below to start in chat with `$ui`.
@@ -201,10 +201,10 @@ python3 skills/skill-structure-governor/scripts/render_bilingual_index.py
 
 | Bundle | Platform | Language | Best For |
 |--------|----------|----------|----------|
-| `codex-en` | OpenAI Codex |  English | Codex users, English workflows |
-| `codex-cn` | OpenAI Codex |  Chinese | Codex users, Chinese workflows |
-| `claude-en` | Anthropic Claude | English | Claude users, English workflows |
-| `claude-cn` | Anthropic Claude |  Chinese | Claude users, Chinese workflows |
+| `RUI-codex-en` | OpenAI Codex |  English | Codex users, English workflows |
+| `RUI-codex-cn` | OpenAI Codex |  Chinese | Codex users, Chinese workflows |
+| `RUI-claude-en` | Anthropic Claude | English | Claude users, English workflows |
+| `RUI-claude-cn` | Anthropic Claude |  Chinese | Claude users, Chinese workflows |
 
 </div>
 
@@ -363,16 +363,16 @@ python3 skills/ui-aesthetic-coach/scripts/generate_design_tokens.py \
 ```
 RUI-agentskills/
 ├── 📦 Bundle Distributions
-│   ├── codex-cn/              # Codex Chinese bundle
+│   ├── RUI-codex-cn/              # Codex Chinese bundle
 │   │   ├── AGENTS.md
 │   │   └── skills/
-│   ├── codex-en/              # Codex English bundle
+│   ├── RUI-codex-en/              # Codex English bundle
 │   │   ├── AGENTS.md
 │   │   └── skills/
-│   ├── claude-cn/             # Claude Chinese bundle
+│   ├── RUI-claude-cn/             # Claude Chinese bundle
 │   │   ├── CLAUDE.md
 │   │   └── skills/
-│   └── claude-en/             # Claude English bundle
+│   └── RUI-claude-en/             # Claude English bundle
 │       ├── CLAUDE.md
 │       └── skills/
 │
@@ -417,12 +417,12 @@ RUI-agentskills/
 
 1. **Copy skills**
    ```bash
-   cp -R RUI-agentskills/codex-en/skills/* ~/.codex/skills/
+   cp -R RUI-agentskills/RUI-codex-en/skills/* ~/.codex/skills/
    ```
 
 2. **Add to project**
    ```bash
-   cp RUI-agentskills/codex-en/AGENTS.md /your/project/AGENTS.md
+   cp RUI-agentskills/RUI-codex-en/AGENTS.md /your/project/AGENTS.md
    ```
 
 3. **Use in prompts**
@@ -434,12 +434,12 @@ RUI-agentskills/
 
 1. **Copy skills**
    ```bash
-   cp -R RUI-agentskills/claude-en/skills/* /your/project/skills/
+   cp -R RUI-agentskills/RUI-claude-en/skills/* /your/project/skills/
    ```
 
 2. **Merge entry file**
    ```bash
-   cat RUI-agentskills/claude-en/CLAUDE.md >> /your/project/CLAUDE.md
+   cat RUI-agentskills/RUI-claude-en/CLAUDE.md >> /your/project/CLAUDE.md
    ```
 
 3. **Use in conversation**
