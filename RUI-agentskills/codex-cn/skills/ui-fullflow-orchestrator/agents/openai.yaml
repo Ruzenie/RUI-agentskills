@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Fullflow Orchestrator"
   short_description: "一键串联UI全流程，强制样式边界锁并按需启用图标引擎"
-  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline with style-scope lock and optional icon pipeline."
+  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline. If only brief is provided, ask user for framework and project-type before execution."
 
 policy:
   allow_implicit_invocation: true

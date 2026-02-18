@@ -87,12 +87,19 @@ Follow the five-phase lifecycle from meta standards:
 - Pipeline outputs must follow `fullflow-handoff.md`.
 - Stage status and quality gates must follow `quality-gates.md`.
 - Reasoning visibility must follow `reasoning-visibility.md`: output auditable decision summaries only, not private reasoning details.
-- If required inputs are missing (`brief/framework/project-type`), fail immediately with clear prompt.
+- Parameter-completion interaction (chat mode): when user only provides `$ui "<brief>"` and misses `framework` or `project-type`, ask follow-up questions first and wait for user answers before execution.
+- Follow-up fields are fixed to two items: `target frontend framework`, `project-type label`.
+- Validation failure (script mode): only fail immediately when directly running `run_fullflow_pipeline.sh` with missing required arguments.
 - If `style_target` is missing or `style.scope.lock.json` is not successfully locked, fail immediately.
 - When `icon-mode=auto|on` and icon requirements are detected, `icon.manifest.json` must be generated.
 - If `requirements.summary.json` has `completeness_score < 70`, mark requirement-completeness risk in report.
 - Must output quantitative scorecard (`self-eval.scorecard.json`) and optimization plan (`optimization.plan.md`) as iteration entry.
 - If script output conflicts with document heuristics, keep script output first and explain manual correction rationale in report.
+
+### Chat follow-up template (when framework/project-type is missing)
+
+1. What is the target frontend framework? (for example: `react` / `vue` / `angular` / `svelte`)
+2. What is the project-type label? (for example: `saas-modern` / `dashboard` / `marketing-site` / `admin-console`)
 
 ## Output Contract
 

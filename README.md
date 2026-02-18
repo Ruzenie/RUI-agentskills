@@ -122,7 +122,8 @@ After installation, follow the steps below to start in chat with `$ui`.
 1) Complete Option 1 or Option 2 first (skills loaded + AGENTS.md/CLAUDE.md merged).
 2) In your project chat, run:
    $ui Build a SaaS analytics dashboard with responsive layout and chart modules
-3) For explicit invocation, use:
+3) If only a brief is provided, the system will first ask two follow-up fields: `target frontend framework` and `project-type label`.
+4) For explicit invocation, use:
    $ui-fullflow-orchestrator Build a SaaS analytics dashboard with responsive layout and chart modules
 ```
 

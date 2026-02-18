@@ -121,7 +121,8 @@ cp RUI-agentskills/codex-cn/AGENTS.md /path/to/your/project/AGENTS.md
 1) 先完成方式一或方式二（技能已加载，并已合并 AGENTS.md/CLAUDE.md）。
 2) 在项目对话中输入：
    $ui 创建一个 SaaS 数据分析仪表盘，支持响应式布局和图表模块
-3) 如需显式点名，可使用：
+3) 若只给了需求描述，系统会先追问两项：`目标前端技术栈` 与 `项目类型标签`。
+4) 如需显式点名，可使用：
    $ui-fullflow-orchestrator 创建一个 SaaS 数据分析仪表盘，支持响应式布局和图表模块
 ```
 

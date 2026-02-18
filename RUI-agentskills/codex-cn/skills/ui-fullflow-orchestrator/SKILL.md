@@ -87,12 +87,19 @@ bash skills/ui-fullflow-orchestrator/scripts/run_fullflow_pipeline.sh \
 - 流水线输出必须遵循 `fullflow-handoff.md` 约定。
 - 阶段状态和质量门禁必须遵循 `quality-gates.md`。
 - 思维过程可见化必须遵循 `reasoning-visibility.md`：只输出可审计决策摘要，不输出私有推理细节。
-- 若必填输入缺失（brief/framework/project-type），立即失败并提示。
+- 参数补全交互（对话模式）：当用户仅提供 `$ui "<brief>"` 且缺少 `framework` 或 `project-type` 时，必须先追问并等待用户补充，不得直接执行流水线。
+- 追问项固定为两项：`目标前端技术栈`、`项目类型标签`。
+- 参数校验失败（脚本模式）：仅在直接运行 `run_fullflow_pipeline.sh` 且缺少必填参数时，才立即失败并提示。
 - 若 `style_target` 未明确，或 `style.scope.lock.json` 未锁定成功，立即失败并提示。
 - 当 `icon-mode=auto|on` 且命中图标需求时，必须产出 `icon.manifest.json`。
 - `requirements.summary.json` 的 `completeness_score < 70` 时，在报告中标记需求完备度风险。
 - 需输出量化评分卡（`self-eval.scorecard.json`）与优化计划（`optimization.plan.md`），作为迭代入口。
 - 若脚本结果与文档经验冲突，先保留脚本结果，再在报告中写出人工修正理由。
+
+### 对话追问模板（缺 framework/project-type）
+
+1. 目标前端技术栈是什么？（如 `react` / `vue` / `angular` / `svelte`）
+2. 项目类型标签是什么？（如 `saas-modern` / `dashboard` / `marketing-site` / `admin-console`）
 
 ## 输出约定
 
