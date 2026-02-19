@@ -11,6 +11,7 @@ Goal: expose an auditable decision process to users without revealing private mo
 
 2. Decision path
 - skills/scripts used
+- stage-by-stage skill mapping (`Phase -> skills`) that is visible in chat for each phase
 - objective of each step
 - concise reason for key branch choices
 

@@ -1,0 +1,43 @@
+name: rui-agentskills-integration
+
+on:
+  push:
+    paths:
+      - 'RUI-agentskills/**'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'RUI-agentskills/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+jobs:
+  smoke-suite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Integration Smoke Suite
+        run: |
+          bash RUI-agentskills/tests/integration/run_smoke_suite.sh
+
+      - name: Upload Smoke Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ruiagents-smoke-output
+          path: Ruiagents/integration-smoke-*
+          if-no-files-found: ignore

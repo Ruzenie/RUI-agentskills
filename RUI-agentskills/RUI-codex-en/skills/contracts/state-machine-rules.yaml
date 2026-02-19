@@ -1,0 +1,25 @@
+{
+  "version": "1.1.0",
+  "states": ["pending", "in_progress", "completed", "completed_with_findings", "completed_with_risk", "failed", "skipped"],
+  "status_transitions": {
+    "pending->in_progress": "skill_started",
+    "in_progress->completed": "skill_finished",
+    "in_progress->completed_with_findings": "skill_finished_with_findings",
+    "in_progress->completed_with_risk": "skill_finished_with_risk",
+    "in_progress->failed": "skill_error",
+    "pending->skipped": "dependency_failed"
+  },
+  "phase_sequence": [
+    "phase1_requirements",
+    "phase2_architecture",
+    "phase3_implementation",
+    "phase4_self_review",
+    "phase5_acceptance"
+  ],
+  "constraints": {
+    "phase2_can_start": "phase1_all_completed",
+    "phase3_can_start": "phase2_all_completed",
+    "phase4_can_start": "phase3_all_completed",
+    "phase5_can_start": "phase4_all_completed"
+  }
+}

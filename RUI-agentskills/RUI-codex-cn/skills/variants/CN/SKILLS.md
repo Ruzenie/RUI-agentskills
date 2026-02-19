@@ -41,21 +41,23 @@
 - 验收审计器：按多维标准执行验收并输出发布建议。
 14. `ui-self-reviewer`
 - 自评审查器：从代码、视觉、交互、审美四个维度执行交付前自评。
+15. `quality-gate-validator`
+- 质量门禁验证器：自动校验量化门槛并输出门禁验证报告。
 
 ## 架构与基建层
 
-15. `project-scaffold-builder`
+16. `project-scaffold-builder`
 - 脚手架构建器：完成项目初始化、工具链配置与质量门禁落地。
-16. `component-library-architect`
+17. `component-library-architect`
 - 组件库架构师：设计组件库层次、令牌系统、变体策略与发布流程。
-17. `app-workspace-guide`
+18. `app-workspace-guide`
 - 工作区基线识别：识别 app 工作区技术基线、组件资产和目录约束。
-18. `ui-agent-workspace`
+19. `ui-agent-workspace`
 - UI 工作空间协作：将 Workspace、Canvas 与 UI 修改日志协议整合为可执行协作流程，保障设计到代码的可追溯交付。
 
 ## 结构治理层
 
-19. `skill-structure-governor`
+20. `skill-structure-governor`
 - 技能结构治理：校验双语入口与多平台包装结构完整性，保障分发一致性。
 
 校验命令：`python3 skills/skill-structure-governor/scripts/validate_structure.py`

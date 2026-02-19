@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Fullflow Orchestrator"
   short_description: "Orchestrates the full UI pipeline from requirements to acceptance with unified artifacts."
-  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline. If only brief is provided, ask user for framework and project-type before execution."
+  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline. Treat $ui as an alias of $ui-fullflow-orchestrator even if no `ui` entry appears in available skills, and do not reroute. If only brief is provided, ask user for framework and project-type before execution. When user explicitly invokes $ui or $ui-fullflow-orchestrator, do not downgrade to $ui-codegen-master or any single-skill flow. Fullflow must-pass skills are fixed to: requirements-elicitation-engine, ui-codegen-master, ui-selector-playbook, ui-aesthetic-coach, ui-aesthetic-generator, ui-generation-workflow-runner, ui-acceptance-auditor, ui-self-reviewer, ui-agent-workspace."
 
 policy:
   allow_implicit_invocation: true

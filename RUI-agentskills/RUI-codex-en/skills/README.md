@@ -2,7 +2,7 @@
 
 **A production-oriented UI skill system that plugs directly into Codex / Claude.**
 
-![Skills](https://img.shields.io/badge/skills-19-2563eb)
+![Skills](https://img.shields.io/badge/skills-20-2563eb)
 ![Pipeline](https://img.shields.io/badge/fullflow-5_phase-16a34a)
 ![Focus](https://img.shields.io/badge/focus-implementation%20%26%20verification-f59e0b)
 
@@ -108,6 +108,10 @@ This set links requirement clarification, style scope control, implementation, a
 19. `skill-structure-governor`
 - Governance for bilingual entries and multi-platform packaging templates (structure-only, no business-feature migration).
 - Script: `skills/skill-structure-governor/scripts/validate_structure.py`
+
+20. `quality-gate-validator`
+- Automated quantitative gate validation (requirements completeness, design score, reuse ratio, complexity, and type coverage).
+- Script: `skills/quality-gate-validator/scripts/validate_gates.py`
 
 ## Suggested Collaboration Sequence
 

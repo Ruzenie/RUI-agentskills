@@ -2,7 +2,7 @@
 
 **一套可直接挂载到 Codex / Claude 的 UI 研发技能系统。**
 
-![Skills](https://img.shields.io/badge/skills-19-2563eb)
+![Skills](https://img.shields.io/badge/skills-20-2563eb)
 ![Pipeline](https://img.shields.io/badge/fullflow-5_phase-16a34a)
 ![Focus](https://img.shields.io/badge/focus-implementation%20%26%20verification-f59e0b)
 
@@ -24,7 +24,7 @@
 2. 样式任务先锁边界：`style-scope-guard`
 3. 最终收敛交付：`ui-codegen-master`
 
-## 快捷点名（Claude）
+## 快捷点名（Codex）
 
 - `$ui`：全流程快捷别名，等价于 `$ui-fullflow-orchestrator`。
 - 前端/UI任务未显式点名技能时，默认路由到 `$ui`。
@@ -108,6 +108,10 @@
 19. `skill-structure-governor`
 - 双语入口与多平台包装模板治理（结构校验，不迁移业务功能）。
 - 脚本：`skills/skill-structure-governor/scripts/validate_structure.py`
+
+20. `quality-gate-validator`
+- 量化门禁自动校验（需求完备度、审美评分、复用率、复杂度、类型覆盖等）。
+- 脚本：`skills/quality-gate-validator/scripts/validate_gates.py`
 
 ## 文档到技能映射
 

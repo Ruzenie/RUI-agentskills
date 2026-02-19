@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Aesthetic Coach"
   short_description: "用于UI审美诊断、视觉风格定义与可实施设计规范输出"
-  default_prompt: "Use $ui-aesthetic-coach to critique and upgrade my UI style with actionable design tokens and layout rules."
+  default_prompt: "使用 $ui-aesthetic-coach 评审并提升 UI 审美，输出可执行视觉规则与令牌建议。"
 
 policy:
   allow_implicit_invocation: true

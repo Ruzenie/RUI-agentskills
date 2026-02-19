@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 from typing import List
+from datetime import datetime, timezone
 
 
 STYLE_KEYWORDS = (
@@ -87,6 +88,18 @@ def build_markdown(payload: dict) -> str:
     for item in forbidden:
         lines.append(f"- {item}")
     lines.append("")
+    lines.append("## Forbidden File Patterns")
+    for item in payload.get("forbidden_patterns", []):
+        lines.append(f"- {item.get('pattern')}: {item.get('reason')}")
+    lines.append("")
+    lines.append("## CSS Property Policy")
+    lines.append("- allowed_css_properties:")
+    for prop in payload.get("allowed_css_properties", []):
+        lines.append(f"  - {prop}")
+    lines.append("- forbidden_css_properties:")
+    for item in payload.get("forbidden_css_properties", []):
+        lines.append(f"  - {item.get('property')}: {item.get('reason')}")
+    lines.append("")
     lines.append("## Pre-Edit Checklist")
     lines.append("- [ ] 已明确样式改动目标区域")
     lines.append("- [ ] 已确认允许改动文件清单")
@@ -138,16 +151,46 @@ def main() -> None:
     locked_areas = [style_target] if scope_locked else []
 
     payload = {
+        "version": "2.0.0",
         "scope_locked": scope_locked,
         "style_target": style_target,
         "locked_areas": locked_areas,
         "allowed_files": allowed_files,
+        "forbidden_patterns": [
+            {"pattern": "*.service.ts", "reason": "禁止修改服务层"},
+            {"pattern": "*.{spec,test}.ts", "reason": "禁止修改测试文件"},
+            {"pattern": "src/routes/*", "reason": "禁止修改路由配置"},
+            {"pattern": "src/store/*", "reason": "禁止修改状态管理"},
+            {"pattern": "src/api/*", "reason": "禁止修改API层"},
+        ],
         "allowed_change_types": [
             "design_tokens",
             "css_rules",
             "class_name_style_binding",
             "layout_spacing_typography",
             "animation_transition",
+        ],
+        "allowed_css_properties": [
+            "color",
+            "background",
+            "font-size",
+            "padding",
+            "margin",
+            "border",
+            "border-radius",
+            "box-shadow",
+            "display",
+            "flex",
+            "gap",
+            "line-height",
+            "letter-spacing",
+            "opacity",
+            "transition",
+        ],
+        "forbidden_css_properties": [
+            {"property": "position", "reason": "可能影响布局结构"},
+            {"property": "z-index", "reason": "可能破坏层级关系"},
+            {"property": "transform", "reason": "可能影响动效和布局"},
         ],
         "forbidden_change_types": [
             "business_logic",
@@ -156,6 +199,18 @@ def main() -> None:
             "state_shape",
             "data_fetching_flow",
             "dependency_change_unrelated_to_style",
+        ],
+        "validation_hooks": {
+            "pre_commit": "check_style_boundary",
+            "post_change": "verify_no_logic_change",
+            "ci_pipeline": "validate_scope_lock",
+        },
+        "audit_log": [
+            {
+                "action": "scope_locked" if scope_locked else "scope_pending",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "by": "style-scope-guard",
+            }
         ],
         "non_target_code_policy": "禁止修改目标样式范围外的任何代码。",
         "requires_confirmation": bool(confirmation_questions),

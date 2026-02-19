@@ -1,0 +1,10 @@
+{
+  "name": "perf-budget-guard",
+  "version": "1.0.0",
+  "description": "示例插件：在 Phase5 后读取 flow.metrics.json 并输出性能预算报告。",
+  "hooks": [
+    {"phase": "phase5_acceptance", "when": "after", "action": "scripts/check_perf_budget.sh"}
+  ],
+  "dependencies": ["ui-acceptance-auditor"],
+  "artifacts": ["perf-budget.report.json"]
+}

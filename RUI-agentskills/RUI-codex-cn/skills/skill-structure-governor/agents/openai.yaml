@@ -1,7 +1,7 @@
 interface:
   display_name: "Skill Structure Governor"
   short_description: "校验 skills 双语入口与多平台包装结构完整性"
-  default_prompt: "Use $skill-structure-governor to validate bilingual and multi-platform packaging structure."
+  default_prompt: "使用 $skill-structure-governor 校验双语与多平台技能打包结构。"
 
 policy:
   allow_implicit_invocation: true

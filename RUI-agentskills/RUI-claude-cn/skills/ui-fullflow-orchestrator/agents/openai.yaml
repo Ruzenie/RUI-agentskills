@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Fullflow Orchestrator"
-  short_description: "一键串联UI全流程，强制样式边界锁并按需启用图标引擎"
-  default_prompt: "Use $ui-fullflow-orchestrator to run end-to-end UI pipeline. If only brief is provided, ask user for framework and project-type before execution."
+  short_description: "一键串联UI全流程，按需启用样式边界锁与图标引擎"
+  default_prompt: "使用 $ui-fullflow-orchestrator 执行端到端 UI 全流程。将 $ui 视为 $ui-fullflow-orchestrator 别名，即使技能列表无 ui 同名条目也不得改路由。若仅提供 brief，先追问 framework 与 project-type 后再执行。当用户显式使用 $ui 或 $ui-fullflow-orchestrator 时，禁止降级到 $ui-codegen-master 或任何单技能流程。全流程必过技能固定为：requirements-elicitation-engine、ui-codegen-master、ui-selector-playbook、ui-aesthetic-coach、ui-aesthetic-generator、ui-generation-workflow-runner、ui-acceptance-auditor、ui-self-reviewer、ui-agent-workspace。"
 
 policy:
   allow_implicit_invocation: true

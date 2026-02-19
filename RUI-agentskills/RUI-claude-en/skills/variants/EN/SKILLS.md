@@ -41,21 +41,23 @@ This file is generated from the bilingual catalog.
 - UI Acceptance Auditor: Runs multi-dimension acceptance checks and release recommendations.
 14. `ui-self-reviewer`
 - UI Self Reviewer: Performs pre-delivery self-review across code, visual, interaction, and aesthetics.
+15. `quality-gate-validator`
+- Quality Gate Validator: Validates quantitative quality gates and emits gate-validation-report.json.
 
 ## Architecture & Foundation
 
-15. `project-scaffold-builder`
+16. `project-scaffold-builder`
 - Project Scaffold Builder: Builds project scaffolding, tooling setup, and initial quality gates.
-16. `component-library-architect`
+17. `component-library-architect`
 - Component Library Architect: Designs component-library architecture, token system, and release process.
-17. `app-workspace-guide`
+18. `app-workspace-guide`
 - App Workspace Guide: Detects workspace baseline, component assets, and directory constraints.
-18. `ui-agent-workspace`
+19. `ui-agent-workspace`
 - UI Agent Workspace: Integrates workspace state, canvas design, and UI change logging into an executable collaboration workflow.
 
 ## Structure Governance
 
-19. `skill-structure-governor`
+20. `skill-structure-governor`
 - Skill Structure Governor: Validates bilingual entries and multi-platform packaging structure consistency.
 
 Validation command: `python3 skills/skill-structure-governor/scripts/validate_structure.py`

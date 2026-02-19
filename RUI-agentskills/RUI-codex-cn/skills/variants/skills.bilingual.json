@@ -171,6 +171,15 @@
       "title_en": "Skill Structure Governor",
       "desc_zh": "校验双语入口与多平台包装结构完整性，保障分发一致性。",
       "desc_en": "Validates bilingual entries and multi-platform packaging structure consistency."
+    },
+    {
+      "id": "quality-gate-validator",
+      "category_zh": "研发执行层",
+      "category_en": "Implementation",
+      "title_zh": "质量门禁验证器",
+      "title_en": "Quality Gate Validator",
+      "desc_zh": "自动校验量化门槛并输出门禁验证报告。",
+      "desc_en": "Validates quantitative quality gates and emits gate-validation-report.json."
     }
   ]
 }

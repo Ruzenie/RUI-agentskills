@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Selector Pro"
   short_description: "基于仓库真实数据的 UI 组件库推荐、评估与对比"
-  default_prompt: "Use $ui-selector-pro to recommend and evaluate UI libraries for my project with explicit tradeoffs."
+  default_prompt: "使用 $ui-selector-pro 为项目推荐并评估 UI 组件库，给出明确权衡。"
 
 policy:
   allow_implicit_invocation: true

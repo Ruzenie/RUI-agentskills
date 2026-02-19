@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-02-18",
+  "refactor_thresholds": {
+    "file_lines": 200,
+    "render_logic_lines": 30,
+    "pattern_repeat": 3,
+    "prop_drill_depth": 3,
+    "jsx_nesting_depth": 5
+  },
+  "quality_gates": {
+    "requirement_completeness_min": 70,
+    "design_score_min_5": 4.0,
+    "component_reuse_rate_min": 40,
+    "cyclomatic_complexity_max": 10,
+    "ts_type_coverage_min": 90,
+    "color_contrast_min": "4.5:1"
+  },
+  "design_tokens": {
+    "default_direction": "Data Clarity",
+    "default_density": "comfortable",
+    "default_icon_style": "outline"
+  },
+  "pipeline": {
+    "default_framework": "react",
+    "default_project_type": "saas-modern",
+    "auto_complete": false,
+    "acceptance_level": "strict"
+  },
+  "artifacts": {
+    "output_dir": "Ruiagents",
+    "keep_history": true,
+    "max_history_count": 10
+  },
+  "logging": {
+    "level": "info",
+    "save_intermediate": true,
+    "profiling": false
+  }
+}

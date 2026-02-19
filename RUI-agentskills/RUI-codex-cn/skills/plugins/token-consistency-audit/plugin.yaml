@@ -1,0 +1,10 @@
+{
+  "name": "token-consistency-audit",
+  "version": "1.0.0",
+  "description": "示例插件：在 Phase4 前检查 tokens.json 与 tokens.css 一致性。",
+  "hooks": [
+    {"phase": "phase4_self_review", "when": "before", "action": "scripts/audit_tokens.sh"}
+  ],
+  "dependencies": ["ui-aesthetic-generator"],
+  "artifacts": ["token-consistency.report.json"]
+}

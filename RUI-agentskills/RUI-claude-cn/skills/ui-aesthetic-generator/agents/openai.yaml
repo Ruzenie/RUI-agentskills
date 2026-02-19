@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Aesthetic Generator"
   short_description: "按审美规范生成可执行视觉规范"
-  default_prompt: "Use $ui-aesthetic-generator to generate style system and component visual specs."
+  default_prompt: "使用 $ui-aesthetic-generator 生成风格系统与组件视觉规范。"
 
 policy:
   allow_implicit_invocation: true

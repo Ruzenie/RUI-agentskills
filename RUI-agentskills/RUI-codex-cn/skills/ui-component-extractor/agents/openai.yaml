@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Component Extractor"
   short_description: "自动识别并执行组件抽离重构"
-  default_prompt: "Use $ui-component-extractor to split oversized components and improve reuse."
+  default_prompt: "使用 $ui-component-extractor 拆分过大组件并提升复用性。"
 
 policy:
   allow_implicit_invocation: true

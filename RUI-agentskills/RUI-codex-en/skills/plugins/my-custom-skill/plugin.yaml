@@ -1,0 +1,11 @@
+{
+  "name": "my-custom-skill",
+  "version": "1.0.0",
+  "description": "自定义技能示例",
+  "hooks": [
+    {"phase": "phase4_self_review", "when": "before", "action": "scripts/pre_refactor_hook.sh"},
+    {"phase": "phase5_acceptance", "when": "after", "action": "scripts/post_acceptance_hook.sh"}
+  ],
+  "dependencies": ["ui-generation-workflow-runner"],
+  "artifacts": ["custom-report.json"]
+}

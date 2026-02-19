@@ -1,7 +1,7 @@
 interface:
   display_name: "UI Self Reviewer"
   short_description: "执行代码/视觉/交互/审美自审"
-  default_prompt: "Use $ui-self-reviewer to run a structured self-review before shipping."
+  default_prompt: "使用 $ui-self-reviewer 在交付前执行结构化自审。"
 
 policy:
   allow_implicit_invocation: true

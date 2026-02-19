@@ -26,7 +26,11 @@ python3 skills/skill-structure-governor/scripts/validate_structure.py
 ## 快捷点名与前端路由
 
 - 别名映射：`$ui` 等价于 `$ui-fullflow-orchestrator`。
+- 别名兜底解析（强制）：即使可用技能列表中没有名为 `ui` 的条目，也必须将 `$ui` 解析为 `$ui-fullflow-orchestrator`，禁止回复“没有同名 ui”并改走其它技能。
 - 点名优先：用户显式点名任意技能时，优先按用户指定执行。
+- 全流程锁定（强制）：用户显式输入 `$ui` 或 `$ui-fullflow-orchestrator` 时，必须锁定为全流程编排，禁止降级或改路由到 `$ui-codegen-master` 等单技能。
+- 缺参处理（强制）：即使缺少参数，也只能追问补全（`framework`、`project-type`），不得通过降级绕过。
+- 必过技能链（强制）：`$ui` 全流程必须覆盖 `requirements-elicitation-engine`、`ui-codegen-master`、`ui-selector-playbook`、`ui-aesthetic-coach`、`ui-aesthetic-generator`、`ui-generation-workflow-runner`、`ui-acceptance-auditor`、`ui-self-reviewer`、`ui-agent-workspace`。
 - 前端默认路由：未点名技能但属于前端/UI任务时，默认走 `$ui` 全流程。
 - 参数补全：当用户仅输入 `$ui "需求描述"` 时，先追问 `目标前端技术栈` 与 `项目类型标签`，补全后再执行全流程。
 - 前端任务范围（示例）：页面开发、组件开发、样式/视觉优化、交互改造、前端重构、可访问性与性能优化。
